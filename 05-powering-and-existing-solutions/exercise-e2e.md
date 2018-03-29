@@ -15,4 +15,4 @@
   (тук имайте предвид, че може да нямя връзка от мрежата на РС-тата и WIFI-a, миналата година нещо не работеше май)
 9. Може и бутона и LED-a на платката да включите
 
-Github sus starite lekcii https://github.com/vlast3k/FMI_IoT_2017/wiki
+Github със старите лекции https://github.com/vlast3k/FMI_IoT_2017/wiki
