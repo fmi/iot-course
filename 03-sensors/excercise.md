@@ -1,8 +1,3 @@
-# Presentation
-[https://github.com/vlast3k/FMI_IoT_2017/blob/master/Lection3/Lection3-SensorTypes.pptx](https://github.com/vlast3k/FMI_IoT_2017/blob/master/Lection3/Lection3-SensorTypes.pptx)
-
-
-
 # BME 280
 
 ## Connection
