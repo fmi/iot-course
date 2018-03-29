@@ -13,4 +13,5 @@ Implement an access point and an HTTP server that lets you:
 Implement a remote controlled LED using the HC-12 module (TODO Nachev)
 
 ## MQTT client
-Implement an MQTT client (TODO Trayan)
+The MQTT demo project with ESP8266 WiFi module and RabbitMQ (+ Java clients for receving status messages from ESP board and sending commands)
+is available at: https://github.com/iproduct/course-iot/tree/master/esp8266-mqtt-rabbitmq
