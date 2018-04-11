@@ -9,3 +9,6 @@
 ## Onboarding with [WiFiManager](https://github.com/tzapu/WiFiManager)
 ## Device management with [Thinx cloud](https://thinx.cloud)
 
+
+# References
+* Resistor color codes: https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code-5-band
