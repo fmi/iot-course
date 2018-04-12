@@ -1,7 +1,7 @@
 # Exercises
 
 ## Measure device health
-* battery voltage
+* [battery voltage](https://arduinodiy.wordpress.com/2016/12/25/monitoring-lipo-battery-voltage-with-wemos-d1-minibattery-shield-and-thingspeak/)
 * uptime (i.e. unexpected restarts due to e.g. WDT or BOR)
 
 ## OTA update
