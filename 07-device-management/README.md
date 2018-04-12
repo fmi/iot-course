@@ -5,8 +5,8 @@
 * uptime (i.e. unexpected restarts due to e.g. WDT or BOR)
 
 ## OTA update
-* [Local HTTP server + browser update](http://esp8266.github.io/Arduino/versions/2.0.0/doc/ota_updates/ota_updates.html#web-browser)
-* [Remote HTTP server update](http://esp8266.github.io/Arduino/versions/2.0.0/doc/ota_updates/ota_updates.html#http-server)
+* [Local HTTP server + browser update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#web-browser)
+* [Remote HTTP server update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#http-server)
 
 ## Onboarding
 * Implement onboarding with [WiFiManager](https://github.com/tzapu/WiFiManager)
