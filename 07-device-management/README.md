@@ -16,5 +16,6 @@
 
 
 # References
-* Resistor color codes: https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code-5-band
-* http://www.instructables.com/id/TESTED-Timekeeping-on-ESP8266-Arduino-Uno-WITHOUT-/
+* [Resistor color codes](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code-5-band)
+* [Arduino timekeeping](http://www.instructables.com/id/TESTED-Timekeeping-on-ESP8266-Arduino-Uno-WITHOUT-/)
+* [Hotspot manager for Android](https://play.google.com/store/apps/details?id=com.etustudio.android.hotspotmanager&hl=en)
