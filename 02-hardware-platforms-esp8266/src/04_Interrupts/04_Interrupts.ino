@@ -18,10 +18,8 @@ void handleInterrupt() {
 
 void loop() {
 
-  if(unprocessed_interrupts > 0){
-      Serial.println("Processing interrupts: " + String(unprocessed_interrupts));
-      unprocessed_interrupts = 0;
-  }
-    
+  Serial.println("Processing interrupts: " + String(unprocessed_interrupts));
+  unprocessed_interrupts = 0;
+  
   delay(3000);
 }
