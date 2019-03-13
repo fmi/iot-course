@@ -14,15 +14,15 @@
 | 28.02.2019    | 02-hardware-platforms-esp8266         | Павел             |
 | 07.03.2019    | 03-sensors                            | Владимир          |
 | 14.03.2019    | 04-displays-and-actuators             | Владимир          |
-| 21.03.2019    | 05-power-management-and-batteries     | Владимир          |
-| 28.03.2019    | 06-connectivity                       | Павел             |
-| 04.04.2019    | VACATION                              |                   |
-| 11.04.2019    | 07-device-management                  | Павел             |
-| 18.04.2019    | 08-security                           | Павел             |
-| 25.04.2019    | 09-data-management-and-analytics      | Павел             |
-| 02.05.2019    | Course assignments                    | TBD               |
+| 21.03.2019    | 05-connectivity-1                     | Павел             |
+| 28.03.2019    | 06-connectivity-2                     | Владимир          |
+| 04.04.2019    | 07-power-management-and-batteries     | Владимир          |
+| 11.04.2019    | 08-device-management                  | Павел             |
+| 18.04.2019    | 09-security                           | Павел             |
+| 25.04.2019    | 10-data-management-and-analytics      | Павел             |
+| 02.05.2019    | Course assignments                    | Владимир          |
 | 09.05.2019    | Course assignments                    | TBD               |
-| 16.05.2019    | 10-whats-new-in-iot                   | TBD               |
+| 16.05.2019    | 11-whats-new-in-iot                   | TBD               |
 | 23.05.2019    | Course assignments                    | TBD               |
 | 30.05.2019    | Course assignments/Presentation       | TBD               |
 | 07.06.2019    | Course assignments/Presentation       | TBD               |
