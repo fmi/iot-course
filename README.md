@@ -13,7 +13,7 @@
 | 21.02.2019    | 01-intro-to-iot                       | Павел             |
 | 28.02.2019    | 02-hardware-platforms-esp8266         | Павел             |
 | 07.03.2019    | 03-sensors                            | Владимир          |
-| 14.03.2019    | 04-displays-and-actuators             | Павел             |
+| 14.03.2019    | 04-displays-and-actuators             | Владимир          |
 | 21.03.2019    | 05-connectivity-1                     | Павел             |
 | 28.03.2019    | 06-connectivity-2                     | Владимир          |
 | 04.04.2019    | 07-power-management-and-batteries     | Владимир          |
