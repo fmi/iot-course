@@ -20,3 +20,10 @@ HC-12 is configurable, take a look at [AT Commands:](https://howtomechatronics.c
 ## MQTT client
 The MQTT demo project with ESP8266 WiFi module and RabbitMQ (+ Java clients for receving status messages from ESP board and sending commands)
 is available at: https://github.com/iproduct/course-iot/tree/master/esp8266-mqtt-rabbitmq
+
+
+## ESP32
+### BLE Server
+- Alert notification when a button is pressed. 
+
+Overcoming the upload problem: https://www.reddit.com/r/esp32/comments/885mzj/what_do_the_boot_and_en_buttons_do/
