@@ -31,3 +31,5 @@
 * Presentation = финално представяне на курсовите проекти. На този етап са предвидени два дни, поради големината на групата, но е възможно да бъдат обединени и в един.
 
 
+#Award points
+https://docs.google.com/spreadsheets/d/1TxWgE5sfXGhajpvy5DDH74G9Gu3dDoVJygYl3rXnG7k/edit?usp=sharing
