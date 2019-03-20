@@ -2,68 +2,49 @@
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>
+#include <BLE2902.h>
 
-#define SERVICE_UUID        "1811" // Assigned number of Alert notification service: https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.service.alert_notification.xml
+#define ALERT_NOTIFICATION_SERVICE_UUID        "1811" // https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.service.alert_notification.xml
 
-class DeviceConnectedCallback: public BLEServerCallbacks {
-
-    private:
-      bool deviceConnected = false;
-
-    public:
-      void onConnect(BLEServer* pServer) {
-        deviceConnected = true;
-      };
-  
-      void onDisconnect(BLEServer* pServer) {
-        deviceConnected = false;
-      }
-  
-      bool isDeviceConnected(){
-        return deviceConnected;
-      }
-};
-DeviceConnectedCallback *pDcCallback = new DeviceConnectedCallback();
 
 BLECharacteristic *pNewAlertCharacteristic;
+BLEServer *pServer;
 
 void setup() {
   Serial.begin(115200);
   Serial.println("Starting BLE ...");
 
   BLEDevice::init("ESP32 alerter");
-  BLEServer *pServer = BLEDevice::createServer();
-  pServer->setCallbacks(pDcCallback);
+  pServer = BLEDevice::createServer();
   Serial.println("Server created");
-
   
-  BLEService *pService = pServer->createService(SERVICE_UUID);
+  BLEService *pService = pServer->createService(ALERT_NOTIFICATION_SERVICE_UUID);
   Serial.println("Service created");
   
-  
   BLECharacteristic *pSupportedAlertCharacteristic = pService->createCharacteristic(
-                                                           *(new BLEUUID((uint16_t)0x2A47)), // Supported new alert category: https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.supported_new_alert_category.xml
+                                                           "2A47", // Supported new alert category: https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.supported_new_alert_category.xml
                                                            BLECharacteristic::PROPERTY_READ
                                                          );
-  uint8_t val[1]; val[0] = 1; //simple alert https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.alert_category_id_bit_mask.xml
-  pSupportedAlertCharacteristic->setValue(val,1);   
+  uint8_t simple_alert_val [] = {0x1};  // https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.alert_category_id_bit_mask.xml
+  pSupportedAlertCharacteristic->setValue(simple_alert_val,1);   
 
 
 
   pNewAlertCharacteristic = pService->createCharacteristic(
-                                                           /*(new BLEUUID((uint16_t)0x2A46), // New alert: https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.new_alert.xml  */
-                                                           "2A46",
+                                                           "2A46", // New alert: https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.new_alert.xml  */
                                                            BLECharacteristic::PROPERTY_NOTIFY
                                                          );
-  //uint8_t val[1]; val[0] = 1; //simple alert https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.alert_category_id_bit_mask.xml
-  //pNewAlertCharacteristic->setValue(val,1);   
-  
+
+ 
+  BLE2902 *p2902 = new BLE2902();
+  p2902->setNotifications(true);
+  pNewAlertCharacteristic->addDescriptor(p2902);
   
   pService->start();
   Serial.println("Service started");
   
   BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
-  pAdvertising->addServiceUUID(SERVICE_UUID);
+  pAdvertising->addServiceUUID(ALERT_NOTIFICATION_SERVICE_UUID);
   pAdvertising->setScanResponse(true);
   pAdvertising->setMinPreferred(0x06);  // functions that help with iPhone connections issue
   pAdvertising->setMinPreferred(0x12);
@@ -75,20 +56,20 @@ void setup() {
 // https://play.google.com/store/apps/details?id=com.punchthrough.lightblueexplorer&hl=en_US
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  bool connected = pDcCallback->isDeviceConnected();
-  Serial.println("Device connected: " + String(connected));
-  if(connected){
+
+  uint32_t nConnected = pServer->getConnectedCount();
+  Serial.println("Connected devices from pServer:" + String(nConnected));
+  if(nConnected > 0){
   
     char message[] = "  Hi there";
     size_t len = strlen(message);
     Serial.println("Message length: " + String(len));
     message[0] = 0x00; // Simple alert id https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.alert_category_id.xml
     message[1] = 0x01; // one new alert present https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.new_alert.xml
-    // Serial.println("New message length: " + String(strlen(message)) );
-    pNewAlertCharacteristic->setValue((uint8_t*)message, len);
-    pNewAlertCharacteristic->notify();
+    
+    pNewAlertCharacteristic->setValue((uint8_t*)message, len); //simple alert https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.alert_category_id_bit_mask.xml
+    pNewAlertCharacteristic->notify(true);
     Serial.println("Notification sent");
   }
-  delay(2000);
+  delay(10000);
 }
