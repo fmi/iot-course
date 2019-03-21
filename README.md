@@ -19,8 +19,8 @@
 | 04.04.2019    | 07-power-management-and-batteries     | Владимир          |
 | 11.04.2019    | 08-device-management                  | Павел             |
 | 18.04.2019    | 09-security                           | Павел             |
-| 25.04.2019    | 10-data-management-and-analytics      | Павел             |
-| 02.05.2019    | Course assignments                    | Владимир          |
+| 25.04.2019    | Vacation                              | N/A               |
+| 02.05.2019    | 10-data-management-and-analytics      | Павел             |
 | 09.05.2019    | Course assignments                    | TBD               |
 | 16.05.2019    | 11-whats-new-in-iot                   | TBD               |
 | 23.05.2019    | Course assignments                    | TBD               |
