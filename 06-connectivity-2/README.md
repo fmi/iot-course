@@ -9,7 +9,13 @@
 * Inside it, create a folder with the name `hardware` if it does not already exist
 * Extract the `bsfrance` folder of the archive into the `hardware` folder. You should get a path like `Arduino\hardware\bsfrance\avr`
 * Restart Arudino IDE
-* Select the `LoRA32u4` board from the Tools > Board menu. **PLEASE DOUBLE CHECK THIS, BECAUSE WRONG BOARD SELECTION MAY DESTROY THE BOARD PHYSICALLY**
+* Select the `LoRA32u4` board from the Tools > Board menu. 
+
+**PLEASE DOUBLE CHECK THIS, BECAUSE WRONG BOARD SELECTION MAY DESTROY THE BOARD PHYSICALLY**
+![alt text][screenshot]
+
+[screenshot]: board_name.png "Board name"
+
 
 ### TTN Application setup
 * 
