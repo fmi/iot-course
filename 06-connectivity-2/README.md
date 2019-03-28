@@ -1,6 +1,11 @@
 # Exercises
 
-## Prerequisites
+## LoRAWAN on TTN
+
+You have to
+* Setup the board in Arduino
+* Create a TTN account
+* Create a TTN app and register the device
 
 ### Board setup
 * Make sure the IBM_LMIC library version "1.5.0+arduino-2" is installed in your Arduino IDE (Tools > Manage Libraries ..)
@@ -17,11 +22,21 @@
 [screenshot]: board_name.png "Board name"
 
 
-### TTN Application setup
-* 
- 
+### TTN Account & Application setup
+* Create a TTN account and log in: https://account.thethingsnetwork.org/register
+* Create a new application
+* Add a new device to the application
+* In the device settings:
+    * Select the `ABP` activation method
+    * DISABLE "Frame Counter Checks" at the bottom of the page to [overcome this problem](https://www.thethingsnetwork.org/forum/t/node-is-sending-data-to-ttn-but-no-data-coming-in-at-ttn-console/6982)
+* Go back to "Device overview" and take note of the:
+    * Device address
+    * Network session key
+    * App session key
+### Create a LoRA client app
+* Use the [LoRAWAN example](https://github.com/fmi/iot-course/tree/master/06-connectivity-2/src/01_LoraModuleClient) and replace the three credentials above with yours.
+* Upload to the board and inspect if device data is coming in.
 
-## Create a LoRA client app
 
 # MQTT Example
 
