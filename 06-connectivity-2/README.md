@@ -22,3 +22,9 @@
  
 
 ## Create a LoRA client app
+
+# MQTT Example
+
+Cloud MQTT tutorial: http://www.arjunsk.com/iot/esp8266-programming-cloud-mqtt-part-3/
+PubSubClient ESP8266: https://github.com/knolleary/pubsubclient
+Cloud MQTT: https://api.cloudmqtt.com
