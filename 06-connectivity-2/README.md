@@ -38,8 +38,7 @@ You have to
 * Upload to the board and inspect if device data is coming in.
 
 
-# MQTT Example
+## MQTT client with ESP8266
+You can use [cloudmqtt's free tier](https://customer.cloudmqtt.com/instance/create?plan=cat) instead of installing your own MQTT server. [This tutorial](http://www.arjunsk.com/iot/esp8266-programming-cloud-mqtt-part-3/) describes an end to end scenario.
 
-Cloud MQTT tutorial: http://www.arjunsk.com/iot/esp8266-programming-cloud-mqtt-part-3/
-PubSubClient ESP8266: https://github.com/knolleary/pubsubclient
-Cloud MQTT: https://api.cloudmqtt.com
+More information on [pubSubClient ESP8266](https://github.com/knolleary/pubsubclient)
