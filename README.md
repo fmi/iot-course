@@ -17,8 +17,8 @@
 | 21.03.2019    | 05-connectivity-1                     | Павел             |
 | 28.03.2019    | 06-connectivity-2                     | Владимир          |
 | 04.04.2019    | 07-power-management-and-batteries     | Владимир          |
-| 11.04.2019    | 08-device-management                  | Павел             |
-| 18.04.2019    | 09-security                           | Павел             |
+| 11.04.2019    | 08-security                           | Павел             |
+| 18.04.2019    | 09-device-management                  | Павел             |
 | 25.04.2019    | Vacation                              | N/A               |
 | 02.05.2019    | 10-data-management-and-analytics      | Павел             |
 | 09.05.2019    | Course assignments                    | TBD               |
