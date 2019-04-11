@@ -9,15 +9,14 @@
 Connect to the MQTT endpoint from the previous exercises, but this time [over TLS](src/02_MQTTS)
 
 ## WiFi probing
-Get this [Wifi probing example](https://github.com/pgenevski/esp8266-sniffer/tree/3df0334b316d9b6e6e36d46792ed9e8a8a8ccc52) up and running. See if you can log more useful information.
+Get this [Wifi probing example](https://github.com/pgenevski/esp8266-sniffer/tree/3df0334b316d9b6e6e36d46792ed9e8a8a8ccc52) running on ESP8266. See if you can log more useful information.
 
 ## Reverse engineering with Signal Analyzer
 Record and decode the OneWire signal from DS18B20 communication using a signal analyzer.
 
 # References
-* https://www.espressif.com/en/media_overview/news/espressif-releases-patches-wifi-vulnerabilities-cert-vu228519
-* https://ikalogic.com/pages/discontinued-products
-* https://www.saleae.com/downloads
-* https://wigle.net/
 * [Another ESP TLS example](http://www.iotsharing.com/2017/08/how-to-use-https-in-arduino-esp32.html)
 * [MQTT Lens Chrome app](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm)
+* [Wifi network geolocation](https://wigle.net/)
+* [Signal analyzer - Ikalogic](https://ikalogic.com/pages/discontinued-products)
+* [Signal analyzer - Saleae](https://www.saleae.com/downloads)
