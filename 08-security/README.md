@@ -26,3 +26,4 @@ Record and decode the OneWire signal from DS18B20 communication using a signal a
 * https://www.saleae.com/downloads
 * https://wigle.net/
 * [Another ESP TLS example](http://www.iotsharing.com/2017/08/how-to-use-https-in-arduino-esp32.html)
+* [MQTT Lens Chrome app](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm)
