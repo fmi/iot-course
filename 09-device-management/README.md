@@ -24,6 +24,9 @@ To simulate a battery and to uderstand how dividers work, proceed as follows:
 
 ## Onboarding
 * Implement onboarding with [WiFiManager](https://github.com/tzapu/WiFiManager)
+    * Get basic example running
+    * Password protect your WifiManager
+    * Add a callback for connection failure
 
 
 ## Optional: Detect unexpected restarts (e.g. WDT)
