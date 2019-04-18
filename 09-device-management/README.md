@@ -35,6 +35,11 @@ To simulate a battery and to uderstand how dividers work, proceed as follows:
 
 ## Optional: Device management
 * Research the [Thinx cloud](https://thinx.cloud) capabilities for the above use cases
+  * Hints to make it run
+     * Clone the repository: https://github.com/suculent/thinx-firmware-esp8266-ino, including the submodules
+     * Copy the folder "thinx-esp8266-example/lib" locally to: <home folder>\Documents\Arduino\libraries\
+     * Compile in Arduino ide (failed for ArduinoESP version 2.5.0, compiles with 2.4.2)
+   
 
 
 # References
