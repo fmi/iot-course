@@ -30,7 +30,8 @@ To simulate a battery and to uderstand how dividers work, proceed as follows:
 
 
 ## Detect unexpected restarts (e.g. WDT)
-Use the ESP8266 SDK to read the [reason for reset](https://www.espressif.com/sites/default/files/documentation/esp8266_reset_causes_and_common_fatal_exception_causes_en.pdf).
+* Use the ESP8266 SDK to read the [reason for reset](https://www.espressif.com/sites/default/files/documentation/esp8266_reset_causes_and_common_fatal_exception_causes_en.pdf).
+* Look around for other interesting information [in the API](https://github.com/esp8266/Arduino/blob/61cd8d83859524db0066a647de3de3f6a0039bb2/libraries/esp8266/examples/TestEspApi/TestEspApi.ino)
 
 ## Optional: Device management
 * Research the [Thinx cloud](https://thinx.cloud) capabilities for the above use cases
