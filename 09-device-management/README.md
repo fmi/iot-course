@@ -29,8 +29,8 @@ To simulate a battery and to uderstand how dividers work, proceed as follows:
     * Add a callback for connection failure
 
 
-## Optional: Detect unexpected restarts (e.g. WDT)
-TODO
+## Detect unexpected restarts (e.g. WDT)
+Use the ESP8266 SDK to read the [reason for reset](https://www.espressif.com/sites/default/files/documentation/esp8266_reset_causes_and_common_fatal_exception_causes_en.pdf).
 
 ## Optional: Device management
 * Research the [Thinx cloud](https://thinx.cloud) capabilities for the above use cases
