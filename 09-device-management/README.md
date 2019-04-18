@@ -40,6 +40,7 @@ To simulate a battery and to uderstand how dividers work, proceed as follows:
      * Copy the folder "thinx-esp8266-example/lib" locally to: <home folder>\Documents\Arduino\libraries\
      * Compile in Arduino ide (failed for ArduinoESP version 2.5.0, compiles with 2.4.2)
      * OwnerId is obtained from https://rtm.thinx.cloud/app/#/profile/dashboard
+     * Changes need to be done in "settings.h" or in the .ino file after commeting the #ifdef s
    
 
 
