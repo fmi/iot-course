@@ -16,16 +16,16 @@ To simulate a battery and to uderstand how dividers work, proceed as follows:
 * Measure the voltage of a 3.7V LiPo battery. You will need to plug in an additional resitor between the input voltage and the A0 pin. What shall be the value of this resistor? Experiment and pick an appropriate value that lets you measure voltages up to 5V (a fully charged LiPo battery may reach a voltage of 4.2V). Then figure out what would be the right calibration coefficient so you can measure correct values. 
 * Optional: [Upload measurements to thingspeak](https://arduinodiy.wordpress.com/2016/12/25/monitoring-lipo-battery-voltage-with-wemos-d1-minibattery-shield-and-thingspeak/)
 
-## Detect unexpected restarts (e.g. WDT)
-TODO
-
 ## OTA update
 * [Remote HTTP server update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#http-server)
 * Optional: [Local HTTP server + browser update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#web-browser)
 
-
 ## Onboarding
 * Implement onboarding with [WiFiManager](https://github.com/tzapu/WiFiManager)
+
+
+## Optional: Detect unexpected restarts (e.g. WDT)
+TODO
 
 ## Optional: Device management
 * Research the [Thinx cloud](https://thinx.cloud) capabilities for the above use cases
