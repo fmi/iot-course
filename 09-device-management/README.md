@@ -17,8 +17,10 @@ To simulate a battery and to uderstand how dividers work, proceed as follows:
 * Optional: [Upload measurements to thingspeak](https://arduinodiy.wordpress.com/2016/12/25/monitoring-lipo-battery-voltage-with-wemos-d1-minibattery-shield-and-thingspeak/)
 
 ## OTA update
-* [Remote HTTP server update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#http-server)
-* Optional: [Local HTTP server + browser update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#web-browser)
+* [Local HTTP server + browser update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#web-browser) - use `Sketch > Export Compiled Binary` menu item to obtain the `bin` file. More details in [this tutorial](https://randomnerdtutorials.com/bin-binary-files-sketch-arduino-ide/).
+
+* [Remote HTTP server update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#http-server) - use a local XAMPP server and get the PHP example running and adapted to your use case.
+
 
 ## Onboarding
 * Implement onboarding with [WiFiManager](https://github.com/tzapu/WiFiManager)
