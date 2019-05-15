@@ -8,7 +8,7 @@ Use ESP32 to emulate a heart rate monitor.
 
 
 Notes:
-* You must install the ESP32 to Arduino and select "ESP32 Dev Module".
+* You must install the [ESP32 to Arduino](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md) and select "ESP32 Dev Module".
 * While uploading the sketch you must hold the "BOOT" button. Otherwise upload will not start. You can release it after upload has started.
 See: https://www.reddit.com/r/esp32/comments/885mzj/what_do_the_boot_and_en_buttons_do/
 * Use the SelfLoops HRV application (Android) to test if it works.
