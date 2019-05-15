@@ -21,11 +21,11 @@
 | 18.04.2019    | 09-device-management                  | Павел             |
 | 25.04.2019    | Vacation                              | N/A               |
 | 02.05.2019    | 10-data-management-and-analytics      | Павел             |
-| 09.05.2019    | Course assignments                    | TBD               |
-| 16.05.2019    | 11-whats-new-in-iot                   | TBD               |
-| 23.05.2019    | Course assignments                    | TBD               |
-| 30.05.2019    | Course assignments/Presentation       | TBD               |
-| 07.06.2019    | Course assignments/Presentation       | TBD               |
+| 09.05.2019    | Course assignments                    | Владимир          |
+| 16.05.2019    | Course assignments                    | Павел             |
+| 23.05.2019    | 11-whats-new-in-iot                   | Павел             |
+| 30.05.2019    | Course assignments/Presentation       | Павел             |
+| 07.06.2019    | Course assignments/Presentation       | Павел             |
 
 * Course assignments = присъствено време, в което трябва да представите напредъка си и може да получите помощ от преподавателите
 * Presentation = финално представяне на курсовите проекти. На този етап са предвидени два дни, поради големината на групата, но е възможно да бъдат обединени и в един.
