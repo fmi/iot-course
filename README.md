@@ -10,22 +10,22 @@
 
 | Дата          | Тема                                  | Лектор            |
 | ------------- |:------------------------------------- | -----------------:|
-| 21.02.2019    | 01-intro-to-iot                       | Павел             |
-| 28.02.2019    | 02-hardware-platforms-esp8266         | Павел             |
-| 07.03.2019    | 03-sensors                            | Владимир          |
-| 14.03.2019    | 04-displays-and-actuators             | Владимир          |
-| 21.03.2019    | 05-connectivity-1                     | Павел             |
-| 28.03.2019    | 06-connectivity-2                     | Владимир          |
-| 04.04.2019    | 07-power-management-and-batteries     | Владимир          |
-| 11.04.2019    | 08-security                           | Павел             |
-| 18.04.2019    | 09-device-management                  | Павел             |
-| 25.04.2019    | Vacation                              | N/A               |
-| 02.05.2019    | 10-data-management-and-analytics      | Павел             |
-| 09.05.2019    | Course assignments                    | Владимир          |
-| 16.05.2019    | Course assignments                    | Павел             |
-| 23.05.2019    | 11-whats-new-in-iot                   | Павел             |
-| 30.05.2019    | Course assignments/Presentation       | Павел             |
-| 06.06.2019    | Course assignments/Presentation       | Павел             |
+| 20.02.2020    | 01-intro-to-iot                       | Павел             |
+| 27.02.2020    | 02-hardware-platforms-esp8266         | Павел             |
+| 05.03.2020    | 03-sensors                            | Владимир          |
+| 12.03.2020    | 04-displays-and-actuators             | Владимир          |
+| 19.03.2020    | 05-connectivity-1                     | Павел             |
+| 26.03.2020    | 06-connectivity-2                     | Владимир          |
+| 02.04.2020    | 07-power-management-and-batteries     | Владимир          |
+| 09.04.2020    | 08-security                           | Павел             |
+| 16.04.2020    | Vacation             			        | N/A               |
+| 23.04.2020    | 09-device-management                  | Павел             |
+| 30.04.2020    | 10-data-management-and-analytics      | Павел             |
+| 07.05.2020    | Course assignments                    | Владимир          |
+| 14.05.2020    | Course assignments                    | Павел             |
+| 21.05.2020    | 11-whats-new-in-iot                   | Павел             |
+| 28.05.2020    | Course assignments/Presentation       | Павел             |
+| 04.06.2020    | Course assignments/Presentation       | Павел             |
 
 * Course assignments = присъствено време, в което трябва да представите напредъка си и може да получите помощ от преподавателите
 * Presentation = финално представяне на курсовите проекти. На този етап са предвидени два дни, поради големината на групата, но е възможно да бъдат обединени и в един.
