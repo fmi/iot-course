@@ -1,3 +1,5 @@
+#define LED_BUILTIN 2  // for ESP32
+
 void setup() {
   
   pinMode(LED_BUILTIN, OUTPUT);
@@ -6,7 +8,7 @@ void setup() {
 
 void loop() {
   
-  //Serial.println("Blink");
+  Serial.println("Blink");
   digitalWrite(LED_BUILTIN, LOW);   // LOW = ON on the ESP-01
   delay(1000);                      
   digitalWrite(LED_BUILTIN, HIGH);  
