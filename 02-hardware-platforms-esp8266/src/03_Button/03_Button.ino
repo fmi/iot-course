@@ -1,4 +1,4 @@
-//#define LED_BUILTIN 16
+#define LED_BUILTIN 2  // ESP32
 #define FLASH_BUTTON 0
 #define GPIO_05 5   // D1 on NodeMCU 0.9
 
