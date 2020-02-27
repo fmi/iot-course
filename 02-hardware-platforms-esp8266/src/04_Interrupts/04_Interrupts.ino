@@ -1,4 +1,4 @@
-//#define LED_BUILTIN 16
+#define LED_BUILTIN 2  // ESP32
 #define FLASH_BUTTON 0
 
 volatile int unprocessed_interrupts;
