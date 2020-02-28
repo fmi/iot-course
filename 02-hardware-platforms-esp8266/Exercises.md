@@ -11,3 +11,7 @@ http://esp8266.github.io/Arduino/versions/2.3.0/doc/filesystem.html
 
 ## General guidelines
 http://www.danielcasner.org/guidelines-for-writing-code-for-the-esp8266/
+
+
+## ESP32 examples
+https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples
