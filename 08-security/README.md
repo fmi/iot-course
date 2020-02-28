@@ -20,3 +20,4 @@ Record and decode the OneWire signal from DS18B20 communication using a signal a
 * [Wifi network geolocation](https://wigle.net/)
 * [Signal analyzer - Ikalogic](https://ikalogic.com/pages/discontinued-products)
 * [Signal analyzer - Saleae](https://www.saleae.com/downloads)
+* [ESP32 exploit of Flash Encryption and Sec. Boot Keys Extraction](https://limitedresults.com/2019/11/pwn-the-esp32-forever-flash-encryption-and-sec-boot-keys-extraction/)
