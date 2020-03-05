@@ -6,8 +6,9 @@
 https://postb.in/ - simple online Web Server, to check outgoing requests
 
 
-# BME 280
+# BME 280 / SI7021
 
+(За Si7021 -  аналогично, пак трябва да се добави Wire.begin, но няма нужда да се специфицира адрес на сензора)
 ## Install Driver
 
 * BME280 Driver - <Arduino IDE> -> Sketch -> Include Library -> Manage Libraries -> Search for "bme280", install "Adafruit BME280 Library"
