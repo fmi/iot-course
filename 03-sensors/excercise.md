@@ -8,17 +8,16 @@ https://postb.in/ - simple online Web Server, to check outgoing requests
 
 # BME 280
 
-## Connection
-
-* VCC - 3.3v
-* GND - GND (G)
-* SDA - D6
-* SCL - D7
-
 ## Install Driver
 
 * BME280 Driver - <Arduino IDE> -> Sketch -> Include Library -> Manage Libraries -> Search for "bme280", install "Adafruit BME280 Library"
 
+## Connection
+
+* VCC - 3.3v (3V3)
+* GND - GND (G)
+* SDA - 21
+* SCL - 19
 
 ## Run Example
 
@@ -26,7 +25,10 @@ https://postb.in/ - simple online Web Server, to check outgoing requests
 2. Adapt for ESP8266, and BME280 Breakout
 
 The sensor can have addresses 0x76 & 0x77, our breakout uses 0x76, the default for the library is 0x77.
-We need to call *Wire.begin(SDA, SCL)*, e.g. like Wire.begin(D6,D7). Without it, the expected ports for I2C communication are D2 (SDA), D1 (SCL)
+We need to call *Wire.begin(SDA, SCL)*, e.g. like Wire.begin(21, 19). Without it, the expected ports for I2C communication are different for each breakout board
+```
+dsds
+```
 
 ![](https://cloud.githubusercontent.com/assets/492455/23690399/087e3e16-03ca-11e7-98ab-bde2e0655ed0.png)
 
