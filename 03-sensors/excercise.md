@@ -17,20 +17,12 @@ https://postb.in/ - simple online Web Server, to check outgoing requests
 
 ## Install Driver
 
-* BME280 Driver - https://github.com/adafruit/Adafruit_BME280_Library
-* Sensor Library - https://github.com/adafruit/Adafruit_Sensor
+* BME280 Driver - <Arduino IDE> -> Sketch -> Include Library -> Manage Libraries -> Search for "bme280", install "Adafruit BME280 Library"
 
-(common for all libraries)
-
-1. Download as ZIP
-2. Extract "Adafruit_BME280_Library-master" to <Arduino_sketch>/libraries
-3. Rename to: Adafruit_BME280 (name of the .cpp & .h files in the folder)
-4. Restart Arduino
-5. Find examples in File/Examples/Examples From Custom Libraries
 
 ## Run Example
 
-1. Open Example from - File / Examples / Adafruit_BME280 / bme280test
+1. Open Example from - File / Examples / Adafruit BME280 Library / bme280test
 2. Adapt for ESP8266, and BME280 Breakout
 
 The sensor can have addresses 0x76 & 0x77, our breakout uses 0x76, the default for the library is 0x77.
