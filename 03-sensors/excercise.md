@@ -1,10 +1,11 @@
 # WiFi
 
-## Connect to Local WiFi
-<Arduino IDE> -> File -> Examples -> Wifi -> WifiClient
-Simple connection to WiFi and sending a request.
-You c
+## Connect to Local WiFi and send Http Request
+<Arduino IDE> -> File -> Examples -> HttpClient -> BasicHttpClient
   
+https://postb.in/ - simple online Web Server, to check outgoing requests
+
+
 # BME 280
 
 ## Connection
