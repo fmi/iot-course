@@ -48,6 +48,10 @@ Change Wifi Connection as shown below
 
 Use Write api key - here in <key>
 http://api.thingspeak.com/update?key=[key]&field1=[value]
+  
+# Web Server
+
+Examples -> WebServer -> HelloServer
 
 # Wifi Connection
 
