@@ -1,3 +1,10 @@
+# WiFi
+
+## Connect to Local WiFi
+<Arduino IDE> -> File -> Examples -> Wifi -> WifiClient
+Simple connection to WiFi and sending a request.
+You c
+  
 # BME 280
 
 ## Connection
