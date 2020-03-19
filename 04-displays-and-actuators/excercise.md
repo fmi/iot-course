@@ -26,3 +26,4 @@ Information on supported methods can be found (if necessary) in the [source](htt
   * Modify the instantiation to `LiquidCrystal_I2C lcd(0x3F,16,2);` as our module is on address 0x3f, and is 16x2
   * Add at the begin of setup(), `Wire.begin(<SDA>, <SCL>)` depending on the pins you used. E.g. `Wire.begin(D6, D7);`
  
+https://circuits4you.com/2019/03/17/esp8266-esp32-i2c-lcd-display-interface/#more-1650
