@@ -1,5 +1,12 @@
 # Exercises
 
+## UART
+Review the code of the [RS485 anemometer example](https://www.hackster.io/philippedc/arduino-esp8266-rs485-modbus-anemometer-45f1d8
+).
+
+> ESP32 has [three hardware UART devices](https://github.com/G6EJD/ESP32-Using-Hardware-Serial-Ports
+) of which at least one is available, so you don't need [software serial as in ESP8266](https://github.com/plerup/espsoftwareserial).
+
 ## OneWire
 Connect the DS18b20 temp sensor to the board and measure its temperature
 
