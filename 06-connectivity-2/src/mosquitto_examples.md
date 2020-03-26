@@ -17,3 +17,6 @@ To publish a message:
 ```bash
 mosquitto_pub --url mqtt://localhost:1883/topic/1 -m 32 -q 0
 ```
+
+### ESP32 / ESP8266
+Use [Pubsubclient](https://pubsubclient.knolleary.net/api.html)
