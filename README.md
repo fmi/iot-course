@@ -14,11 +14,12 @@
 | 27.02.2020    | 02-hardware-platforms-esp8266         | Павел             |
 | 05.03.2020    | 03-sensors                            | Владимир          |
 | 12.03.2020    | 04-displays-and-actuators             | Владимир          |
+|               | 07-power-management-and-batteries     | Владимир          |
 | 19.03.2020    | 05-connectivity-1                     | Павел             |
-| 26.03.2020    | 06-connectivity-2                     | Владимир          |
-| 02.04.2020    | 07-power-management-and-batteries     | Владимир          |
+| 26.03.2020    | 06-connectivity-2                     | Павел             |
+| 02.04.2020    | Bosch lecture?                        | Владимир, Даниел  |
 | 09.04.2020    | 08-security                           | Павел             |
-| 16.04.2020    | Vacation             			        | N/A               |
+| 16.04.2020    | Vacation             			            | N/A               |
 | 23.04.2020    | 09-device-management                  | Павел             |
 | 30.04.2020    | 10-data-management-and-analytics      | Павел             |
 | 07.05.2020    | Course assignments                    | Владимир          |
