@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    mosquitto:
+        image: eclipse-mosquitto
+        ports:
+            - 1883:1883
+            - 8883:8883
+        volumes:
+            - mosquitto-data:/mosquitto/data
+            - mosquitto-logs:/mosquitto/logs
+            - mosquitto-conf:/mosquitto/config
+
+volumes:
+    mosquitto-data:
+    mosquitto-logs:
+    mosquitto-conf:
