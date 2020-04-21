@@ -6,12 +6,15 @@ services:
         ports:
             - 1883:1883
             - 8883:8883
+            - 8080:8080
         volumes:
+            - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+            #- ./password_file:/mosquitto/config/password_file
+            - /etc/letsencrypt/live/mqtt.genevski.com/cert.pem:/mosquitto/config/cert.pem
+            - /etc/letsencrypt/live/mqtt.genevski.com/privkey.pem:/mosquitto/config/privkey.pem
+            - /etc/letsencrypt/live/mqtt.genevski.com/chain.pem:/mosquitto/config/chain.pem
+            - /etc/letsencrypt/live/mqtt.genevski.com/fullchain.pem:/mosquitto/config/fullchain.pem
             - mosquitto-data:/mosquitto/data
-            - mosquitto-logs:/mosquitto/logs
-            - mosquitto-conf:/mosquitto/config
 
 volumes:
     mosquitto-data:
-    mosquitto-logs:
-    mosquitto-conf:
