@@ -9,7 +9,7 @@ services:
             - 8080:8080
         volumes:
             - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
-            #- ./password_file:/mosquitto/config/password_file
+            - ./passwd:/mosquitto/config/passwd
             - /etc/letsencrypt/live/mqtt.genevski.com/cert.pem:/mosquitto/config/cert.pem
             - /etc/letsencrypt/live/mqtt.genevski.com/privkey.pem:/mosquitto/config/privkey.pem
             - /etc/letsencrypt/live/mqtt.genevski.com/chain.pem:/mosquitto/config/chain.pem
