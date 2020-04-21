@@ -23,6 +23,10 @@ mosquitto_pub --url mqtt://localhost:1883/topic/1 -m 32 -q 0
 ### GUI client
 Use [MQTT.FX](http://mqttfx.org/). It is a cross-platform open source tool that actually worked for me.
 
+### Websockets client
+You can use the [live Eclipse Paho client](https://www.eclipse.org/paho/clients/js/utility/) to test websocket communication.
+
+
 ### ESP32 / ESP8266
 Use [Pubsubclient](https://pubsubclient.knolleary.net/api.html)
 
