@@ -1,47 +1,56 @@
 # Exercises
 
 ## Measure battery voltage
+
+### Measuring analog voltages with ESP
 Battery voltage cannot be measured on a digital pin, because it is an analog value that must be converted to digital first. Luckily, [ESP8266](https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf) and [ESP32](https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/peripherals/adc.html) both have a built in ADC (analog to digital converter). 
 
-This exercise shall be done with **ESP8266**. Be aware that the chip (ESP12) itself expects a voltage within the range [0,1V], however there is usually a voltage divider on the board (Wemos D1 and NodeMCU), that allows us to pass higher voltages. For example, Wemos D1 has a 1/3.3 divider, that allows us to pass voltages in the range [0,3.3V]
+This exercise can be done with both **ESP8266** and **ESP32**, but you must be aware of the differences.
+- **ESP8266** - the chip itself expects a voltage within the range [0,1V], however there is usually a voltage divider on the board (Wemos D1 and NodeMCU), that allows us to pass higher voltages. For example, Wemos D1 has a 1/3.3 divider, that allows us to pass voltages in the range [0,3.3V]
 
-![Wemos D1 schematic](https://escapequotes.net/wp-content/uploads/2016/02/wemos-d1-mini-shematics.jpg "Wemos D1 schematic")
-[**THE ABSOLUTE MAX VOLTAGE TOLERABLE VOLTAGE ON THE ANALOG PIN IS NO MORE THAN 1.8V**](https://www.esp8266.com/viewtopic.php?f=5&t=5556). Due to this, we may be forgiven if we pass e.g. 5V to the **input of the built in divider**. However, in all cases whe shall aim to have less than 1V on the internal analog pin. 
+> [**THE ABSOLUTE MAX TOLERABLE VOLTAGE ON THE RAW ANALOG PIN IS NO MORE THAN 1.8V**](https://www.esp8266.com/viewtopic.php?f=5&t=5556). Applying more will damage the board. Due to this, we may be forgiven if we pass e.g. 5V to the **input of the built in divider**. However, in all cases whe shall aim to have less than 1V on the internal analog pin. 
 
+- **ESP32** - the chip has 2 ADCs that can be assigned to different pins. There is also a built in attenuator
+[This video](https://www.youtube.com/watch?v=RlKMJknsNpo) has some useful clarifications on the ESP32 ADC peculiarities.
 
-To simulate a battery and to uderstand how dividers work, proceed as follows:
-* See this diagram to understand [voltage dividers](https://crcit.net/c/9a0ef05f)
-* Connect the A0 pin of ESP8266 to GND (this shall always be safe). Then run the program to measure the voltage. Value shall be zero or very close to it.
-* Connect A0 (AD on the battery powered boards) to the 3.3V. Measured value shall be close to the max one (raw value 1024)
-* Measure the voltage of a 3.7V LiPo battery. You will need to plug in an additional resitor between the input voltage and the A0 pin. What shall be the value of this resistor? Experiment and pick an appropriate value that lets you measure voltages up to 5V (a fully charged LiPo battery may reach a voltage of 4.2V). Then figure out what would be the right calibration coefficient so you can measure correct values. 
-* Optional: [Upload measurements to thingspeak](https://arduinodiy.wordpress.com/2016/12/25/monitoring-lipo-battery-voltage-with-wemos-d1-minibattery-shield-and-thingspeak/)
+### Voltage dividers
+If you need to measure higher voltages, you have to use e.g. a voltage divider to bring down the voltage to the allowed values.
+
+![Voltage divider](divider_simulation.png "Voltage divider")
+> [Live divider](https://crcit.net/c/9a0ef05f)
+
+This however may be in conflict with the board's built in divider and as a result you may get wrong values. Always check the cirquit diagram of the board before you design a divider cirquit and then use a cirquit simulator (e.g. [QUCS](http://qucs.sourceforge.net/)) to simulate it and double check that you don't exceed the voltages and that your assumptions are correct. 
 
 ## OTA update
-* [Local HTTP server + browser update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#web-browser) - use `Sketch > Export Compiled Binary` menu item to obtain the `bin` file. More details in [this tutorial](https://randomnerdtutorials.com/bin-binary-files-sketch-arduino-ide/).
+use `Sketch > Export Compiled Binary` menu item to obtain the `bin` file. More details in [this tutorial](https://randomnerdtutorials.com/bin-binary-files-sketch-arduino-ide/).
 
+### ESP8266
+* [Local HTTP server + browser update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#web-browser) - 
 * [Remote HTTP server update](https://github.com/esp8266/Arduino/tree/2.3.0/doc/ota_updates#http-server) - use a local XAMPP server and get the PHP example running and adapted to your use case.
+
+### ESP32
+Use the [official ESP32 library for OTA](https://github.com/espressif/arduino-esp32/tree/master/libraries/Update). They also have an useful [example how to update from S3](https://github.com/espressif/arduino-esp32/blob/master/libraries/Update/examples/AWS_S3_OTA_Update/AWS_S3_OTA_Update.ino).
+
 
 
 ## Onboarding
-* Implement onboarding with [WiFiManager](https://github.com/tzapu/WiFiManager)
-    * Get basic example running
-    * Password protect your WifiManager
-    * Add a callback for connection failure
+Implement onboarding with WifiManager. There are different libraries, some of which work only on ESP8266.
+* [ESP8266 WiFiManager](https://github.com/tzapu/WiFiManager)
+* [ESP32&ESP8266 WifiManager](https://github.com/zhouhan0126/WIFIMANAGER-ESP32) 
+* [ESP32 only](https://github.com/tonyp7/esp32-wifi-manager)
+* [IotWebConf](https://github.com/prampec/IotWebConf)
 
+Goals:
+  * Use shall be able to enter WiFi credentials of a brand new device
+  * When the wifi connection is lost, user shall be able to re-enter credentials or connect to a different network
 
 ## Detect unexpected restarts (e.g. WDT)
+### ESP8266
 * Use the ESP8266 SDK to read the [reason for reset](https://www.espressif.com/sites/default/files/documentation/esp8266_reset_causes_and_common_fatal_exception_causes_en.pdf).
 * Look around for other interesting information [in the API](https://github.com/esp8266/Arduino/blob/61cd8d83859524db0066a647de3de3f6a0039bb2/libraries/esp8266/examples/TestEspApi/TestEspApi.ino)
 
-## Optional: Device management
-* Research the [Thinx cloud](https://thinx.cloud) capabilities for the above use cases
-  * Hints to make it run
-     * Clone the repository: https://github.com/suculent/thinx-firmware-esp8266-ino, including the submodules
-     * Copy the folder "thinx-esp8266-example/lib" locally to: <home folder>\Documents\Arduino\libraries\
-     * Compile in Arduino ide (failed for ArduinoESP version 2.5.0, compiles with 2.4.2)
-     * OwnerId is obtained from https://rtm.thinx.cloud/app/#/profile/dashboard
-     * Changes need to be done in "settings.h" or in the .ino file after commeting the #ifdef s
-   
+### ESP32
+Take a look at the [official example for reset reason](https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/ResetReason/ResetReason.ino). Take into account that there are two CPUs in ESP32.
 
 
 # References
