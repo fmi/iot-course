@@ -25,8 +25,13 @@
 | 07.05.2020    | Course assignments                    | Владимир          |
 | 14.05.2020    | Course assignments                    | Павел             |
 | 21.05.2020    | 11-whats-new-in-iot                   | Павел             |
-| 28.05.2020    | Course assignments/Presentation       | Павел             |
-| 04.06.2020    | Course assignments/Presentation       | Павел             |
+| 28.05.2020    | Q&A                                   | Павел             |
+| 04.06.2020    | Q&A                                   | Павел             |
+| 11.06.2020    | Present course assignments            | Павел             |
+| 18.05.2020    | Q&A                                   | Павел             |
+| 25.06.2020    | Present course assignments            | Павел             |
+
+Slot is alwasy the same: 17:15 - 21:00
 
 * Course assignments = присъствено време, в което трябва да представите напредъка си и може да получите помощ от преподавателите
 * Presentation = финално представяне на курсовите проекти. На този етап са предвидени два дни, поради големината на групата, но е възможно да бъдат обединени и в един.
