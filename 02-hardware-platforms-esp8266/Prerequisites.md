@@ -18,9 +18,10 @@ Plug your board and select it from the Tools > Board menu
 
 # Troubleshooting
 ## ESP32: Upload not working
-1. You tried unplugging and plugging the board back right?
+1. You tried unplugging and plugging the board back right :) ?
 2. On some boards, you have to hold the `BOOT` button for a while after triggering the upload from the IDE. After upload starts, you can release it.
 3. Sometimes, upload speeds higher than 256000 do not work reliably (e.g. depending on the USB cable quality).
+4. Try to [set both outputs to verbose mode](https://forum.arduino.cc/index.php?topic=615560.0) and look carefuly at the output.
 
 ## ESP32: no output in serial monitor in Windows 10
 For some reason i had to go to Device Manager -> Ports and then in the COM Port for the connected device. Then go to Properties -> Port Settings -> Advanced, and set the COM Port number to something else (e.g. COM 19). Then I had to unplug the device and plug it again and it was working and reverting the port back to the original it was working again
