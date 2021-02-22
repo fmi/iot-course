@@ -23,6 +23,7 @@ Plug your board and select it from the Tools > Board menu
 3. Sometimes, upload speeds higher than 256000 do not work reliably (e.g. depending on the USB cable quality).
 4. Try stopping your antivirus and see if it makes a difference (don't forget to turn it back on).
 5. Try to [set both outputs to verbose mode](https://forum.arduino.cc/index.php?topic=615560.0) and look carefuly at the output.
+6. See if [turning off the compile cache](https://forum.arduino.cc/index.php?topic=686705.0) solves the problem.
 
 ## ESP32: no output in serial monitor in Windows 10
 For some reason i had to go to Device Manager -> Ports and then in the COM Port for the connected device. Then go to Properties -> Port Settings -> Advanced, and set the COM Port number to something else (e.g. COM 19). Then I had to unplug the device and plug it again and it was working and reverting the port back to the original it was working again
