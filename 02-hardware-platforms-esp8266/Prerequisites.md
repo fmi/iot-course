@@ -1,5 +1,5 @@
 # Installation
-1. Install Arduino IDE: https://www.arduino.cc/en/Main/Software - за опреационната система която използвате
+1. Install Arduino IDE 1.8.10: https://www.arduino.cc/en/Main/OldSoftwareReleases#previous - Тръгва и с по-нови версии на Arduino IDE, но работи по-бавно и ако се ползват директории с шпации в името не работи добре
 2. Install ESP8266 Development Kit: https://github.com/esp8266/Arduino#installing-with-boards-manager
 3. Install ESP32 Development Kit: https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md
 
