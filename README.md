@@ -10,28 +10,26 @@
 
 | Дата          | Тема                                  | Лектор            |
 | ------------- |:------------------------------------- | -----------------:|
-| 20.02.2020    | 01-intro-to-iot                       | Павел             |
-| 27.02.2020    | 02-hardware-platforms-esp8266         | Павел             |
-| 05.03.2020    | 03-sensors                            | Владимир          |
-| 12.03.2020    | 04-displays-and-actuators             | Владимир          |
-|               | 07-power-management-and-batteries     | Владимир          |
-| 19.03.2020    | 05-connectivity-1                     | Павел             |
-| 26.03.2020    | 06-connectivity-2                     | Павел             |
-| 02.04.2020    | Bosch lecture?                        | Владимир, Даниел  |
-| 09.04.2020    | 08-security                           | Павел             |
-| 16.04.2020    | Vacation             			            | N/A               |
-| 23.04.2020    | 09-device-management                  | Павел             |
-| 30.04.2020    | 10-data-management-and-analytics      | Павел             |
-| 07.05.2020    | Course assignments                    | Владимир          |
-| 14.05.2020    | Course assignments                    | Павел             |
-| 21.05.2020    | 11-whats-new-in-iot                   | Павел             |
-| 28.05.2020    | Q&A                                   | Павел             |
-| 04.06.2020    | Q&A                                   | Павел             |
-| 11.06.2020    | Present course assignments            | Павел             |
-| 18.05.2020    | Q&A                                   | Павел             |
-| 25.06.2020    | Present course assignments            | Павел             |
+| 25.02.2021    | 01-intro-to-iot                       | Павел             |
+| 04.03.2021    | 02-hardware-platforms-esp8266         | Павел             |
+| 11.03.2021    | 03-sensors                            | Владимир          |
+| 18.03.2021    | 04-displays-and-actuators             | Владимир          |
+| 25.03.2021    | 05-power-management-and-batteries     | Владимир          |
+| 01.04.2021    | 06-connectivity-1                     | Павел             |
+| 08.04.2021    | 07-connectivity-2                     | Павел             |
+| 15.04.2021    | 08-security                           | Павел             |
+| 22.04.2021    | 09-device-management                  | Павел             |
+| 29.04.2021    | 10-data-management-and-analytics      | Павел, Константин |
+| 06.05.2021    | Official holiday                      | N/A               |
+| 13.05.2021    | 11-whats-new-in-iot                   | Павел             |
+| 20.05.2021    | Course assignments                    | Владимир          |
+| 27.05.2021    | Course assignments                    | Павел             |
+| 03.06.2021    | Course assignments                    | Павел             |
+| 10.06.2021    | Present course assignments            | All               |
+| 17.06.2021    | Present course assignments            | All               |
+| 24.06.2021    | Present course assignments            | All               |
 
-Slot is alwasy the same: 17:15 - 21:00
+Slot is always the same: 17:15 - 21:00
 
 * Course assignments = присъствено време, в което трябва да представите напредъка си и може да получите помощ от преподавателите
-* Presentation = финално представяне на курсовите проекти. На този етап са предвидени два дни, поради големината на групата, но е възможно да бъдат обединени и в един.
+* Present course assignments = възможни дати за финално представяне на курсовите проекти. Предвидени са няколко дати поради големината на групата и скоростта с която различните участници завършват проектите.
