@@ -17,6 +17,9 @@ Plug your board and select it from the Tools > Board menu
    * TTGO (with display and USB-C Port)
 
 # Troubleshooting
+
+* Serial Port under Linux: this post explains what and why needs to be done to enable the com port under linux: http://forum.vair-monitor.com/showthread.php?tid=1&pid=41#pid41
+* 
 ## ESP32: Upload not working
 1. You tried unplugging and plugging the board back right :) ?
 2. On some boards, you have to hold the `BOOT` button for a while after triggering the upload from the IDE. After upload starts, you can release it.
