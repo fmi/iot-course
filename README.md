@@ -12,7 +12,7 @@
 | ------------- |:------------------------------------- | -----------------:|:-----:|
 | 25.02.2021    | 01-intro-to-iot                       | Павел             |       |
 | 04.03.2021    | 02-hardware-platforms-esp8266         | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/JuP9YB0plFs) |
-| 11.03.2021    | 03-sensors                            | Владимир          |       |
+| 11.03.2021    | 03-sensors                            | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
 | 18.03.2021    | 04-displays-and-actuators             | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
 | 25.03.2021    | 05-power-management-and-batteries     | Владимир          |       |
 | 01.04.2021    | 06-connectivity-1                     | Павел             |       |
