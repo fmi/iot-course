@@ -12,7 +12,7 @@ void setup() {
   Serial.begin(115200L);
 }
 
-void handleInterrupt() {
+ ICACHE_RAM_ATTR void handleInterrupt() {
   unprocessed_interrupts++;
 }
 
