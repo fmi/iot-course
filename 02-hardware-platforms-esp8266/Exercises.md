@@ -3,11 +3,17 @@
 ## First Steps
 Here https://github.com/fmi/iot-course/tree/master/02-hardware-platforms-esp8266/src are the basic examples for working with the ESP32 and ESP8266.
 Have in mind that not all boards havea built in LED, so on some of them the Blink sketch will not work. On the ones with LED, it is usually bound to GPIO 2, but sometimes to 1 or 13.
-See also the links below, for details on Interrupts, Watchdog and Storage.
+The most important examples for the initial steps are:
+01_HelloWorld, 02_Blink, 03_Button, 04_SerialTest
+
 The most comprehensive store of information for core and common functionalities is the examples folder for each ESP variant. Both types (ESP32 and ESP8266), share almost the same programming abstraction - in our case "Arduino C".
 This is why the existing examples and excercies we do often work for both. (while in some cases like Watchdog, it relies on specific functionality for each chip and therefore they would be different)
 
 Some other core functionalities that are covered as part of this lection are covered by the examples, accessible under Arduino IDE->File->Examples->ESP32/ESP8266
+
+### General guidelines
+http://www.danielcasner.org/guidelines-for-writing-code-for-the-esp8266/
+
 ### Connecting to WiFi
 Wifi/Wifi/WifiScan, Wifi/WifiClient, Wifi/WifiMulti
 
@@ -21,19 +27,16 @@ HttpClient/HttpClientBasic - this example shows how to use the HTTP Client libra
 Going further it is worth exploring how to run a WebServer on ESP
 WebServer/HelloServer - the other examples there are also interesting
 
+## Next Steps
+Going deeper into ESP-programming, it is worth doing some exercises by combing code from the examples or even doing things from scratch.
+See also the links below, for details on Interrupts, Watchdog and Storage, but those are more advanced topics
 
-## Interrupts
+### Interrupts
 https://techtutorialsx.com/2016/12/11/esp8266-external-interrupts/
 
-## Watchdog
+### Watchdog
 https://techtutorialsx.com/2017/01/21/esp8266-watchdog-functions/
 
-## Storage & FS
+### Storage & FS
 http://esp8266.github.io/Arduino/versions/2.3.0/doc/filesystem.html
 
-## General guidelines
-http://www.danielcasner.org/guidelines-for-writing-code-for-the-esp8266/
-
-
-## ESP32 examples
-https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples
