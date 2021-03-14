@@ -1,5 +1,27 @@
 # Additional recources
 
+## First Steps
+Here https://github.com/fmi/iot-course/tree/master/02-hardware-platforms-esp8266/src are the basic examples for working with the ESP32 and ESP8266.
+Have in mind that not all boards havea built in LED, so on some of them the Blink sketch will not work. On the ones with LED, it is usually bound to GPIO 2, but sometimes to 1 or 13.
+See also the links below, for details on Interrupts, Watchdog and Storage.
+The most comprehensive store of information for core and common functionalities is the examples folder for each ESP variant. Both types (ESP32 and ESP8266), share almost the same programming abstraction - in our case "Arduino C".
+This is why the existing examples and excercies we do often work for both. (while in some cases like Watchdog, it relies on specific functionality for each chip and therefore they would be different)
+
+Some other core functionalities that are covered as part of this lection are covered by the examples, accessible under Arduino IDE->File->Examples->ESP32/ESP8266
+### Connecting to WiFi
+Wifi/Wifi/WifiScan, Wifi/WifiClient, Wifi/WifiMulti
+
+Wifi/WifiSmartConfig - allows automatic configuration of the Wifi network and requires the ESP Touch aplication for either Android or Iphone
+
+### Sending HTTP
+While in Wifi/Wificlient we saw that we can have a Socket-like connection, usually this is not very convenient. 
+HttpClient/HttpClientBasic - this example shows how to use the HTTP Client library on ESP which abstracts from the underlying details
+
+### WebServer
+Going further it is worth exploring how to run a WebServer on ESP
+WebServer/HelloServer - the other examples there are also interesting
+
+
 ## Interrupts
 https://techtutorialsx.com/2016/12/11/esp8266-external-interrupts/
 
