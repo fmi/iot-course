@@ -19,7 +19,8 @@ Plug your board and select it from the Tools > Board menu
 # Troubleshooting
 
 * Serial Port under Linux: this post explains what and why needs to be done to enable the com port under linux: http://forum.vair-monitor.com/showthread.php?tid=1&pid=41#pid41
-* 
+* ESP8266 and MacOS BigSur 11.2.3 - pyserial or esptool directories not found next to this upload.py tool.
+ ![](https://user-images.githubusercontent.com/492455/111058955-b582a480-849a-11eb-853b-f692e5d1e226.png)
 ## ESP32: Upload not working
 1. You tried unplugging and plugging the board back right :) ?
 2. On some boards, you have to hold the `BOOT` button for a while after triggering the upload from the IDE. After upload starts, you can release it.
