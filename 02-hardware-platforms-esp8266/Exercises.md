@@ -1,5 +1,3 @@
-# Additional recources
-
 ## First Steps
 Here https://github.com/fmi/iot-course/tree/master/02-hardware-platforms-esp8266/src are the basic examples for working with the ESP32 and ESP8266.
 Have in mind that not all boards havea built in LED, so on some of them the Blink sketch will not work. On the ones with LED, it is usually bound to GPIO 2, but sometimes to 1 or 13.
