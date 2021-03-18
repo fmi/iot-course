@@ -17,9 +17,10 @@
 #define colorSaturation 128
 
 const uint16_t PixelCount = 6; // make sure to set this to the number of pixels in your strip
-const uint8_t PixelPin = 5;  // make sure to set this to the correct pin, ignored for Esp8266
+const uint8_t PixelPin = 18;  // make sure to set this to the correct pin, ignored for Esp8266
 
 //Voltage is 3.3 or 5v
+//Install Library Makuna Neopixel
 
 //ESP32 - Use any pin and enter it above
 //NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
