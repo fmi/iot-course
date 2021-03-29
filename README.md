@@ -15,7 +15,7 @@
 | 04.03.2021    | 03-sensors                            | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
 | 11.03.2021    | 04-displays-and-actuators             | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
 | 18.03.2021    | Practice & Exercises                  | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
-| 25.03.2021    | 05-power-management-and-batteries     | Владимир          |       |
+| 25.03.2021    | 05-power-management-and-batteries     | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
 | 01.04.2021    | 06-connectivity-1                     | Павел             |       |
 | 08.04.2021    | 07-connectivity-2                     | Павел             |       |
 | 15.04.2021    | 08-security                           | Павел             |       |
