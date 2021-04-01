@@ -14,6 +14,8 @@ Review the code of the [official SPI example](https://github.com/espressif/ardui
 
 > ESP32 has [four hardware SPI devices](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/spi_master.html), of which only two can be used by your program (HSPI and VSPI).
 
+- [More details about the SPI protocol](https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html#)
+
 ## OneWire
 Connect the DS18b20 temp sensor to the board and measure its temperature
 
