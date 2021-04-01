@@ -7,10 +7,12 @@ Review the code of the [RS485 anemometer example](https://www.hackster.io/philip
 > ESP32 has [three hardware UART devices](https://github.com/G6EJD/ESP32-Using-Hardware-Serial-Ports
 ) of which at least one is available, so you don't need [software serial as in ESP8266](https://github.com/plerup/espsoftwareserial).
 
+- https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/uart.html
+
 ## SPI
 Review the code of the [official SPI example](https://github.com/espressif/arduino-esp32/blob/master/libraries/SPI/examples/SPI_Multiple_Buses/SPI_Multiple_Buses.ino).
 
-> ESP32 has[four hardware UART devices, of which only two can be used by your program (HSPI and VSPI).
+> ESP32 has [four hardware SPI devices](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/spi_master.html), of which only two can be used by your program (HSPI and VSPI).
 
 ## OneWire
 Connect the DS18b20 temp sensor to the board and measure its temperature
@@ -20,7 +22,7 @@ Use ESP32 to emulate a heart rate monitor.
 
 * Use the SelfLoops HRV application (Android) to test if it works.
 
-## LoRa
+## (Optional) LoRa
 Review the implementation of the LoRa client device.
 
 ## (Optional) ISM band (433MHz) connectivity (HC-12)
