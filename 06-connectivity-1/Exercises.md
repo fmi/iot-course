@@ -20,7 +20,7 @@ Connect the DS18b20 temp sensor to the board and measure its temperature
 ## Bluetooth Low Energy 
 Use ESP32 to emulate a heart rate monitor. 
 
-* Use the SelfLoops HRV application (Android) to test if it works.
+* Use the [SelfLoops HRV application (Android)](https://play.google.com/store/apps/details?id=com.wellness.selfloops.hrv&hl=en_US&gl=US) to test if it works.
 
 ## (Optional) LoRa
 Review the implementation of the LoRa client device.
