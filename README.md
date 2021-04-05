@@ -16,7 +16,7 @@
 | 11.03.2021    | Displays and actuators                | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
 | 18.03.2021    | Practice & Exercises                  | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
 | 25.03.2021    | Power management and batteries        | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
-| 01.04.2021    | Connectivity 1                        | Павел             |       |
+| 01.04.2021    | Connectivity 1                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
 | 08.04.2021    | Connectivity 2                        | Павел             |       |
 | 15.04.2021    | Security                              | Павел             |       |
 | 22.04.2021    | Device management                     | Павел             |       |
