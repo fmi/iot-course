@@ -1,17 +1,19 @@
 #include <ESP8266WiFi.h>
-#include <PubSubClient.h>
+#include <PubSubClient.h> //https://github.com/knolleary/pubsubclient/blob/master/src/PubSubClient.cpp
 
-const char* mqtt_server = "mqtt.genevski.com";
-const char* clientId = "ESP32Client";
+const char* mqtt_server = "tb.genevski.com";
+const char* clientId = "DoesntMatter";
+const char* user = "niceaccesstoken2021";
+const char* pass = NULL;
 
 WiFiClient wifi;
 PubSubClient client(wifi);
 
 void setup_wifi() {
-  WiFi.begin("btc123", "malchozaicho");
+  WiFi.begin("btc123", "wishiknewthat"); 
   Serial.println("Connecting to wifi ");
   while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
+    delay(1000);
     Serial.print(".");
   }
   Serial.print("Connected. IP: ");
@@ -34,10 +36,13 @@ int reconnect() {
   }
   
   Serial.print("Reconnecting to MQTT server...");  
-  if (client.connect(clientId)) {
+  if (client.connect(clientId, user, pass)) {
     Serial.println("connected");
-    client.subscribe("topics/2"); // resubscribe
+    
+    client.subscribe("topics/2");
+    Serial.println("resubscribed");
     return 0;
+    
   } else {
     Serial.println("failed");
     return client.state();
@@ -46,21 +51,29 @@ int reconnect() {
 
 void setup() {
   Serial.begin(115200);
+  randomSeed(analogRead(0));
+  
   setup_wifi();
+  
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
 }
 
 void loop() {
-  // TODO performa some real measurement here
-  float temperature = 25.8;
+  
+  float temperature = random(200, 301) / 10.0;
 
   int err = reconnect();
   if(err != 0){
     // TODO buffer the measurement to send next time
   } else {
     client.loop(); // process incoming messages and maintain connection to server
-    client.publish("topics/1", String(temperature).c_str()); // TODO format message in JSON and add sequence number
+    
+    // TODO add sequence number
+    String json = "{\"temperature\":" + String(temperature,1) + "}"; 
+    Serial.println(json);
+    client.publish("v1/devices/me/telemetry", json.c_str());
+    
   }
   delay(2000);
 }
