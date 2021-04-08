@@ -18,7 +18,15 @@ To publish a message  use e.g.:
 mosquitto_pub --url mqtt://localhost:1883/topic/1 -m 32 -q 0
 ```
 
+Alternatively for ThingsBoard:
+```bash
+mosquitto_pub -d -q 1 -h tb.genevski.com -p "1883" -t "v1/devices/me/telemetry" -u youraccesstoken -m {"temperature":25.1}
+```
+
+
 > WARNING - may not work easily for TLS connection. You must add either the `--cafile` or `--capath` options as per the [official documentation](https://mosquitto.org/man/mosquitto_pub-1.html), but nevertheless still get SSL handshape errors. For TLS better test it with the GIU based client
+
+- https://mosquitto.org/man/mosquitto_pub-1.html
 
 ### GUI client
 Use [MQTT.FX](http://mqttfx.org/). It is a cross-platform open source tool that actually worked for me.
