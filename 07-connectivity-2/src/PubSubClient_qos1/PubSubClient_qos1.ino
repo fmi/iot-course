@@ -79,7 +79,7 @@ void loop() {
     bool success = client.publish("v1/devices/me/telemetry", json.c_str(), retained, qos);
     if(!success){
       Serial.println("publish failed");
-      lwmqtt_err_t err = client.lastError();
+      lwmqtt_err_t err = client.lastError(); // https://github.com/256dpi/arduino-mqtt/blob/master/src/lwmqtt/lwmqtt.h
       Serial.println(err);
     }
   }
