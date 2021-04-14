@@ -2,7 +2,8 @@
 
 ## Encryption
 ### HTTPS
-* **ESP8266**: Implement simple verification of the host by fingerprint checking - [example](https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/examples/HTTPSRequest/HTTPSRequest.ino)
+* **ESP8266**: Implement full certificate verification as in the latest example - [example](https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/examples/HTTPSRequest/HTTPSRequest.ino)
+    * Alternatively you may implement simple verification of the host by fingerprint checking only (see the history of above file)
 * **ESP32**: Implement a [full verification client](src/01_WifiClientSecure). Try it out with other hosts and change the root CA certificate if necessary. This example was adapted from the [official example](https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFiClientSecure/examples/WiFiClientSecure/WiFiClientSecure.ino) to include the up to date Root CA certificate of the howsmyssl host.
     
 ### MQTTS
