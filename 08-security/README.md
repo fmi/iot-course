@@ -9,6 +9,11 @@
 ### MQTTS
 Connect to the MQTT endpoint from the previous exercises, but this time [over TLS](src/02_MQTTS)
 
+To figure out if the problem is in your code or the connection, you can test `mosquitto_pub` (on Linux):
+```bash
+mosquitto_pub --capath /etc/ssl/certs/ -d -q 1 -h "tb.genevski.com" -p "8883" -t "v1/devices/me/telemetry" -u "your_access_token" -m {"temperature":27}
+```
+
 ## WiFi probing
 Get this [Wifi probing example](https://github.com/pgenevski/esp8266-sniffer/tree/3df0334b316d9b6e6e36d46792ed9e8a8a8ccc52) running on ESP8266. See if you can log more useful information.
 
