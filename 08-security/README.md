@@ -6,6 +6,11 @@
     * Alternatively you may implement simple verification of the host by fingerprint checking only (see the history of above file)
 * **ESP32**: Implement a [full verification client](src/01_WifiClientSecure). Try it out with other hosts and change the root CA certificate if necessary. This example was adapted from the [official example](https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFiClientSecure/examples/WiFiClientSecure/WiFiClientSecure.ino) to include the up to date Root CA certificate of the howsmyssl host.
     
+To figure out if the problem is in your code or the connection, you can test with `curl`:
+```bash
+curl -X POST -d "{\"temperature\": 25}" https://tb.genevski.com/api/v1/your_access_token/telemetry --header "Content-Type:application/json" -H "Connection: close"
+```
+    
 ### MQTTS
 Connect to the MQTT endpoint from the previous exercises, but this time [over TLS](src/02_MQTTS)
 
