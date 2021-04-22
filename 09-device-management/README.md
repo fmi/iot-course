@@ -21,6 +21,9 @@ If you need to measure higher voltages, you have to use e.g. a voltage divider t
 
 This however may be in conflict with the board's built in divider and as a result you may get wrong values. Always check the cirquit diagram of the board before you design a divider cirquit and then use a cirquit simulator (e.g. [QUCS](http://qucs.sourceforge.net/)) to simulate it and double check that you don't exceed the voltages and that your assumptions are correct. 
 
+### Measuring Vcc supply voltage
+The ESP8266 ADC can be configured to [measure the Vcc supply voltate](https://arduino-esp8266.readthedocs.io/en/latest/reference.html#analog-input)
+
 ## OTA update
 use `Sketch > Export Compiled Binary` menu item to obtain the `bin` file. More details in [this tutorial](https://randomnerdtutorials.com/bin-binary-files-sketch-arduino-ide/).
 
