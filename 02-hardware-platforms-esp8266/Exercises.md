@@ -38,3 +38,11 @@ https://techtutorialsx.com/2017/01/21/esp8266-watchdog-functions/
 ### Storage & FS
 http://esp8266.github.io/Arduino/versions/2.3.0/doc/filesystem.html
 
+### ESP32 Dual Core
+The ESP32 has two available cores that share the heap (~290KB). By default, the loop() function runs on core 1. Using some built-in functions, we can set as many as we want tasks on any core.
+
+Most notably, we can run a high-memory high-performance task on core 0, and run our networking/error-handling code on core 1 to avoid bottlenecks.
+
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos.html
+https://www.freertos.org/a00113.html
+https://www.freertos.org/RTOS_Task_Notification_As_Counting_Semaphore.html
