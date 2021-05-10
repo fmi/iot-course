@@ -19,8 +19,9 @@
 | 01.04.2021    | Connectivity 1                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
 | 08.04.2021    | Connectivity 2                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
 | 15.04.2021    | Security                              | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
-| 22.04.2021    | Device management                     | Павел             |       |
-| 29.04.2021    | Data management and analytics         | Павел, Константин |       |
+| 22.04.2021    | Device management                     | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
+| 29.04.2021    | Data management and analytics         | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
+| 29.04.2021    | Data management - Exercise            | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
 | 06.05.2021    | Official holiday                      | N/A               |       |
 | 13.05.2021    | Whats new in IoT                      | Павел             |       |
 | 20.05.2021    | Course assignments                    | Владимир          |       |
