@@ -23,7 +23,7 @@
 | 29.04.2021    | Data management and analytics         | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
 | 29.04.2021    | Data management - Exercise            | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
 | 06.05.2021    | Official holiday                      | N/A               |       |
-| 13.05.2021    | Whats new in IoT                      | Павел             |       |
+| 13.05.2021    | Whats new in IoT                      | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/s_EFJk2EUiQ) |
 | 20.05.2021    | Course assignments                    | Владимир          |       |
 | 27.05.2021    | Course assignments                    | Павел             |       |
 | 03.06.2021    | Course assignments                    | Павел             |       |
