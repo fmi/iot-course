@@ -46,3 +46,4 @@ Most notably, we can run a high-memory high-performance task on core 0, and run 
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos.html
 https://www.freertos.org/a00113.html
 https://www.freertos.org/RTOS_Task_Notification_As_Counting_Semaphore.html
+
