@@ -10,26 +10,24 @@
 
 | Дата          | Тема                                  | Лектор            | Видео |
 | ------------- |:------------------------------------- | -----------------:|:-----:|
-| 25.02.2021    | Intro to IoT                          | Павел             |       |
-| 04.03.2021    | Hardware platforms / ESP              | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/JuP9YB0plFs) |
-| 04.03.2021    | Sensors                               | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
-| 11.03.2021    | Displays and actuators                | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
-| 18.03.2021    | Practice & Exercises                  | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
-| 25.03.2021    | Power management and batteries        | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
-| 01.04.2021    | Connectivity 1                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
-| 08.04.2021    | Connectivity 2                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
-| 15.04.2021    | Security                              | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
-| 22.04.2021    | Device management                     | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
-| 29.04.2021    | Data management and analytics         | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
-| 29.04.2021    | Data management - Exercise            | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
-| 06.05.2021    | Official holiday                      | N/A               |       |
-| 13.05.2021    | Whats new in IoT                      | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/s_EFJk2EUiQ) |
-| 20.05.2021    | Course assignments                    | Владимир          |       |
-| 27.05.2021    | Course assignments                    | Павел             |       |
-| 03.06.2021    | Course assignments                    | Павел             |       |
-| 10.06.2021    | Present course assignments            | All               |       |
-| 17.06.2021    | Present course assignments            | All               |       |
-| 24.06.2021    | Present course assignments            | All               |       |
+| 24.02.2022    | Intro to IoT                          | Павел             |       |
+| 03.03.2022    | National holiday.                     | All               |       |
+| 10.03.2022    | Hardware platforms / ESP              | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/JuP9YB0plFs) |
+| 17.03.2022    | Sensors                               | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
+| 24.03.2022    | Displays and actuators                | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
+| 31.03.2022    | Practice & Exercises                  | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
+| 07.04.2022    | Power management and batteries        | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
+| 14.04.2022    | Connectivity 1                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
+| 21.04.2022    | Connectivity 2                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
+| 28.04.2022    | Security                              | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
+| 05.05.2022    | Device management                     | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
+| 12.05.2022    | Data management and analytics         | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
+| 19.05.2022    | Data management - Exercise            | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
+| 26.05.2022    | Whats new in IoT                      | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/s_EFJk2EUiQ) |
+| 02.06.2022    | Course assignments                    | Владимир          |       |
+| 09.06.2022    | Course assignments                    | Павел             |       |
+| 16.06.2022    | Present course assignments            | All               |       |
+| 23.06.2022    | Present course assignments            | All               |       |
 
 Slot is always the same: 17:15 - 21:00
 
