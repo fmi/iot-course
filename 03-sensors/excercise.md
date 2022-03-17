@@ -1,9 +1,17 @@
 # WiFi
 
 ## Connect to Local WiFi and send Http Request
-<Arduino IDE> -> File -> Examples -> HttpClient -> BasicHttpClient
+<Arduino IDE> -> File -> Examples -> HttpClient -> BasicHttpsClient
   
-https://postb.in/ - simple online Web Server, to check outgoing requests
+  Note: Recently most of the free test online Web Servers only accept HTTPS requests. This is why it is important to get the Https example. To run it against the server, the verification of the server-side certificate has to be disabled (unless this is needed for the scenario). This can be done by replacing the line
+``` 
+  client -> setCACert(rootCACertificate); 
+```  
+  in the top with
+```
+   client -> setInsecure();
+```  
+https://requestbin.com/ - simple online Web Server, to check outgoing requests
 
 
 # BME 280 / SI7021
