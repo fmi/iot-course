@@ -46,13 +46,10 @@ _Note the serial baud rate in this example is 9600, so it needs to be changed in
 # Data to Thingspeak
 
 Create account here - http://thingspeak.com, also account to Mathlabs is necessary to be created
-Create channel as described here, at the bottom section "Thingspeak"
-https://github.com/vlast3k/simple-co2-monitor-fw/wiki/First-Steps
+Create channel as described here 
+https://www.mathworks.com/help/thingspeak/collect-data-in-a-new-channel.html
 
-Import example from
-File -> Examples -> ESP8266HTTPClient -> BasicHTTPClient
-
-Change Wifi Connection as shown below
+Use the example from the first excercise for sending HTTPS request
 
 Use Write api key - here in <key>
 http://api.thingspeak.com/update?key=[key]&field1=[value]
@@ -61,26 +58,4 @@ http://api.thingspeak.com/update?key=[key]&field1=[value]
 
 Examples -> WebServer -> HelloServer
 
-# Wifi Connection
-
-Instead of using WiFiMulti, and the associated instability with it, better to do simple WiFi connection like this
-
-```
-#include <ESP8266WiFi.h>
-
-...
-
-void main() {
-...
-  WiFi.begin(ssid, password);
-  
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-
-  Serial.print("Local IP:"); Serial.println(WiFi.localIP());
-...
-}
-```
 ___
