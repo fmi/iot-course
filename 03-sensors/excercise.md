@@ -1,4 +1,7 @@
 # WiFi
+## WifiScan
+
+Examples -> Wifi -> WifiScan
 
 ## Connect to Local WiFi and send Http Request
 <Arduino IDE> -> File -> Examples -> HttpClient -> BasicHttpsClient
