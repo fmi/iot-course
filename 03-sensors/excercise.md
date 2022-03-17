@@ -25,8 +25,8 @@ https://requestbin.com/ - simple online Web Server, to check outgoing requests
 
 * VCC - 3.3v (3V3)
 * GND - GND (G)
-* SDA - 21
-* SCL - 19
+* SDA - 16
+* SCL - 17
 
 ## Run Example
 
@@ -34,11 +34,11 @@ https://requestbin.com/ - simple online Web Server, to check outgoing requests
 2. Adapt for ESP8266, and BME280 Breakout
 
 The sensor can have addresses 0x76 & 0x77, our breakout uses 0x76, the default for the library is 0x77.
-We need to call *Wire.begin(SDA, SCL)*, e.g. like Wire.begin(21, 19). Without it, the expected ports for I2C communication are different for each breakout board
+We need to call *Wire.begin(SDA, SCL)*, e.g. like Wire.begin(16, 17). Without it, the expected ports for I2C communication are different for each breakout board
 ```
     Serial.begin(9600); 
     
-    Wire.begin(21, 19);
+    Wire.begin(16, 17);
     status = bme.begin(0x76); 
 ```
 _Note the serial baud rate in this example is 9600, so it needs to be changed in the serial monitor_
