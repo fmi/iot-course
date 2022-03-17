@@ -56,6 +56,11 @@ Use the example from the first excercise for sending HTTPS request
 
 Use Write api key - here in <key>
 http://api.thingspeak.com/update?key=[key]&field1=[value]
+
+```
+        String url = "https://api.thingspeak.com/update?api_key=DGJI41Z9325VC02E&field1=";
+      url = url + x++;
+```
   
 # Web Server
 
