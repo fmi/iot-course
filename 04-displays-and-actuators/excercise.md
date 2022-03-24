@@ -20,16 +20,10 @@ For ESP32 there are no such issues detected
 3. Some good example from the library is examples/NeopPixelBus by Makuna/animations/NeoPixelFunLoop (just set Pixelcount to the number of pixels - e.g. 8)
 
 
-# LiquidCrystal (OUTDATED)
-Documentation is here: https://www.arduino.cc/en/Reference/LiquidCrystal .
+# LiquidCrystal 
+1. Install "LiquidCrystal I2C" Library by Marco Schwarz. There are a lot so find and select this one
+2. Load example from examples/INCOMPATIBLE/Liquid Crystal I2C/HelloWorld (it says incompatible as the library does not state ESP32, but it uses just standard functionality so it is fine)
+3. In the beginning of the sketch, provide the SDA,SCA pins that you are using via   Wire.begin(16,17); (in case SDA=16, SCL=17). And connect to 5V and GND
+4. Most likely you will need to turn the knob on the back clockwise to increase contrast until you see something
+5. if nothing is shown, you may need to change the port for the display from 0x27 to 0x3F -> `LiquidCrystal_I2C lcd(0x3F,16,2);`
 
-But we cannot use the standard library as our displays are I2C.
-
-Information on supported methods can be found (if necessary) in the [source](https://github.com/marcoschwartz/LiquidCrystal_I2C/blob/master/) 
-1. Connect display to 5V(VIN), GND and two pins, e.g. D6(SDA), D7(SCL)
-1. Install "LiquidCrystal I2C by Frank Brabander" Library via Library Manager: 
-2. Open example: **File -> Examples -> LiquidCrystal_I2C -> Hello World**
-  * Modify the instantiation to `LiquidCrystal_I2C lcd(0x3F,16,2);` as our module is on address 0x3f, and is 16x2
-  * Add at the begin of setup(), `Wire.begin(<SDA>, <SCL>)` depending on the pins you used. E.g. `Wire.begin(D6, D7);`
- 
-https://circuits4you.com/2019/03/17/esp8266-esp32-i2c-lcd-display-interface/#more-1650
