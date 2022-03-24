@@ -2,22 +2,22 @@
 Location of default GPIO mappings for ESP8266 boards: 	c:\Users\I024148\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\variants\nodemcu\
 
 # Serial Input Test
+It is a bit tricky to handle Serial Input correctly and there wasn't a good example for this shipped with the ESP libraries, so here is one that can be embeded in other projects
+
 1. Copy contents of this sketch https://github.com/iot-course/04-displays/SerialTest.ino to a new sketch
 
 # NeoPixel Test
 Documentation is here https://github.com/Makuna/NeoPixelBus/wiki, but is quite a LOT.
 
-For Arduino it can be connected to almost any pin, for ESP8266, it works best on GPIO 2 (D4 on some boards) and GPIO 3 (used for Serial Input usually). When connected to other pins there may be issues with WiFi. This is why initialization is via
+For ESP32 amd Arduino328 it can be connected to almost any pin, for ESP8266, it works best on GPIO 2 (D4 on some boards) and GPIO 3 (used for Serial Input usually). When connected to other pins there may be issues with WiFi. This is why initialization is via
 
-(This may be outdated, check current examples!)
+Note: the drawback here is that GPIO2 on ESP8266 is pulled up/down during sketch upload, so NeoPixels may show some colors (usually Green) after sketch is uploaded
+For ESP32 there are no such issues detected
 
-`NeoPixelBus<NeoGrbFeature, NeoEsp8266Uart800KbpsMethod> strip(PixelCount, PixelPin);`
-
-Note: the drawback here is that GPIO2 is pulled up/down during sketch upload, so NeoPixels may show some colors (usually Green) after sketch is uploaded
-
-**Connection** : 5V/VIN, GND, D4 (GPIO2)
+**Connection** : 5V/VIN, GND, DIN -> G2 (ESP32) or D4 (ESP8266 GPIO2)
 1. Install "NeopPixelBus by Makuna" library
-2. Example: https://github.com/iot-course/04-displays/NeoPixelBar.ino (the examples from the library are a bit more complex)
+2. Example: https://github.com/fmi/iot-course/blob/master/04-displays-and-actuators/NeoPixeslFmi22.ino
+3. Some good example from the library is examples/NeopPixelBus by Makuna/animations/NeoPixelFunLoop (just set Pixelcount to the number of pixels - e.g. 8)
 
 
 # LiquidCrystal (OUTDATED)
