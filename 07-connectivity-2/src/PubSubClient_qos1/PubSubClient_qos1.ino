@@ -1,9 +1,9 @@
-#include <ESP8266WiFi.h>
+#include <WiFi.h>
 #include <MQTT.h> // https://github.com/256dpi/arduino-mqtt
 
 const char* mqtt_server = "tb.genevski.com";
 const char* clientId = "DoesntMatter";
-const char* user = "niceaccesstoken2021";
+const char* user = "niceaccesstoken2022";
 const char* pass = NULL;
 
 WiFiClient wifi;
