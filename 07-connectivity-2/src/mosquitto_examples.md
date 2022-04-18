@@ -28,9 +28,6 @@ mosquitto_pub -d -q 1 -h tb.genevski.com -p "1883" -t "v1/devices/me/telemetry" 
 
 - https://mosquitto.org/man/mosquitto_pub-1.html
 
-### GUI client
-Use [MQTT.FX](http://mqttfx.org/). It is a cross-platform open source tool that actually worked for me.
-
 ### Websockets client
 You can use the [live Eclipse Paho client](https://www.eclipse.org/paho/clients/js/utility/) to test websocket communication.
 
