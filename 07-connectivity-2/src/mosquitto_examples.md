@@ -47,7 +47,7 @@ You can use the [live Eclipse Paho client](https://www.eclipse.org/paho/clients/
 
 
 # Running a mosquitto server through docker
-If you nevertheless need to run a mosquitto server, you can look at the really simple setup in the provided [`mosquitto.yml`](mosquitto.yml), which runs in docker swarm / docker compose.
+If you nevertheless need to run a mosquitto server, you can look at the really simple setup in the provided [`mosquitto.yml`](mosquitto/mosquitto.yml), which runs in docker swarm / docker compose.
 
 ### Generating passwords
 One option to supply user accounts to mosquitto is through a `passwd` file. This script can be used to create/update the password for a given user, provided that the `passwd` file is in the current directory.
