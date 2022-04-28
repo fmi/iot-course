@@ -18,7 +18,7 @@ mosquitto_pub --capath /etc/ssl/certs/ -d -q 1 -h "tb.genevski.com" -p "8883" -t
 ```
 
 ## WiFi probing
-Get this [Wifi probing example](https://github.com/pgenevski/esp8266-sniffer/tree/3df0334b316d9b6e6e36d46792ed9e8a8a8ccc52) running on ESP8266. See if you can log more useful information.
+Get this [Wifi probing example](https://github.com/pgenevski/esp8266-sniffer/tree/3df0334b316d9b6e6e36d46792ed9e8a8a8ccc52) running on ESP32 (originally written for ESP8266). See if you can log more useful information.
 
 ## Reverse engineering with Signal Analyzer
 Record and decode the OneWire signal from DS18B20 communication using a signal analyzer.
