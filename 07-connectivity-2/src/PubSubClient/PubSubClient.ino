@@ -2,9 +2,10 @@
 #include <PubSubClient.h> //https://github.com/knolleary/pubsubclient/blob/master/src/PubSubClient.cpp
 
 const char* mqtt_server = "tb.genevski.com";
+const int mqtt_port = 1883;
 const char* clientId = "DoesntMatter";
 const char* user = "tbaccesstoken";
-const char* pass = NULL;
+const char* pass = NULL; // no need to provide it
 
 WiFiClient wifi;
 PubSubClient client(wifi);
@@ -55,7 +56,7 @@ void setup() {
   
   setup_wifi();
   
-  client.setServer(mqtt_server, 1883);
+  client.setServer(mqtt_server, mqtt_port);
   client.setCallback(callback);
 }
 
