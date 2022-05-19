@@ -24,7 +24,7 @@
 | 12.05.2022    | Data management and analytics         | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
 | 19.05.2022    | Data management - Exercise            | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
 | 26.05.2022    | Course assignments                    | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/s_EFJk2EUiQ) |
-| 02.06.2022    | Whats new in IoT                      | Владимир          |       |
+| 02.06.2022    | Whats new in IoT                      | Павел             |       |
 | 09.06.2022    | Course assignments                    | Павел             |       |
 | 16.06.2022    | Present course assignments            | All               |       |
 | 23.06.2022    | Present course assignments            | All               |       |
