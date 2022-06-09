@@ -62,3 +62,6 @@ Take a look at the [official example for reset reason](https://github.com/espres
 * [Hotspot manager for Android](https://play.google.com/store/apps/details?id=com.etustudio.android.hotspotmanager&hl=en)
 * [Multicast DNS](https://en.wikipedia.org/wiki/Multicast_DNS)
 * [DNS-SD](http://www.dns-sd.org/)
+
+# Extra
+* [ESPHome & HomeAssistant for home automation](https://esphome.io/guides/getting_started_hassio.html)
