@@ -1,20 +1,22 @@
 # Installation
-1. Install Arduino IDE 1.8.10: https://www.arduino.cc/en/Main/OldSoftwareReleases#previous - Тръгва и с по-нови версии на Arduino IDE, но работи по-бавно и ако се ползват директории с шпации в името не работи добре
-2. Install ESP8266 Development Kit: https://github.com/esp8266/Arduino#installing-with-boards-manager
-3. Install ESP32 Development Kit: https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
+1. Install [Arduino IDE](https://www.arduino.cc/en/software) 2.0.4
+2. Install [ESP32 Development Kit](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
+3. Some boards require USB to serial drivers. To determine which chip you have, open device manager, plug the board and look what appears under `Ports (COM & LPT)`. On linux you may have to tail the syslog to determine the device. Then download the driver from the manufacturer's site. Known drivers are:
+   - [Silabs CP2102](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 
 
-# Board selection and specifics
-Plug your board and select it from the Tools > Board menu
+# Board selection
+Open the Arduino IDE, plug your board and select the board from the `Tools > Board` menu:
+* ESP32
+   * **ESP32 Dev Module** or ESP32 Devkit V1
+   * TTGO (with display and USB-C Port)
+
 * ESP8266
   * Node MCU 0.9 (yellow) - The LED_BUILTIN constant shall be replaced with 1 to get the built in LED to work.
   * Node MCU 1.0 (black)
   * Wemos D1 R2 & mini (blue) - Use upload speed = 115200 baud
   * Node MCU 1.0 (long battery powered boards) - Use this one although the board is labeled Wemos. The "Wemos D1 R2 & mini" will also work, but you will have to replace LED_BUILTIN with 16
 
-* ESP32
-   * ESP32 Devkit V1 or ESP32 Dev Module
-   * TTGO (with display and USB-C Port)
 
 # Troubleshooting
 
