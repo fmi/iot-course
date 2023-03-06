@@ -1,5 +1,7 @@
 import pandas as pd
 
-df = pd.read_csv("Входен тест за ФМИ IoT 2021.csv")
+df = pd.read_csv("applicants.csv")
 
-print( ";".join( df['email'].unique()))
+unique_emails = [x.strip() for x in df['email'].unique()]
+print(len(unique_emails))
+print( ";".join( unique_emails ))
