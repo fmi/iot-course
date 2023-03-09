@@ -17,6 +17,33 @@ Examples -> Wifi -> WifiScan
 https://requestbin.com/ - simple online Web Server, to check outgoing requests
 
 
+# VL53L0X - TOF Sensor
+  
+Лазерен сензор за измерване на разстояние, между 20-1200 мм
+  
+## Install Driver
+
+  * Adafruit_VL53L0X -  <Arduino IDE> -> Sketch -> Include Library -> Manage Libraries -> Search for "VL53L0X", install "Adafruit VL53L0X "
+  
+## Connection
+* VCC - 3.3v (3V3)
+* GND - GND (G)
+* SDA - 16 or any other 
+* SCL - 17 or any other
+  
+  
+  ## Run Example
+  
+  1. Open Example from -> File / Examples / Adafriut VL53L0X / VL53L0X_continous
+  2. Adapt for correct I2C Pins, e.g. `Wire.begin(SDA, SCL)
+  ```
+  void setup() {
+  Serial.begin(115200);
+  Wire.begin(21, 22);
+  ```
+  3. Run and enjoy
+  
+
 # BME 280 / SI7021
 
 (За Si7021 -  аналогично, пак трябва да се добави Wire.begin, но няма нужда да се специфицира адрес на сензора)
@@ -30,6 +57,7 @@ https://requestbin.com/ - simple online Web Server, to check outgoing requests
 * GND - GND (G)
 * SDA - 16
 * SCL - 17
+
 
 ## Run Example
 
