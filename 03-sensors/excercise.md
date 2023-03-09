@@ -73,6 +73,11 @@ We need to call *Wire.begin(SDA, SCL)*, e.g. like Wire.begin(16, 17). Without it
     status = bme.begin(0x76); 
 ```
 _Note the serial baud rate in this example is 9600, so it needs to be changed in the serial monitor_
+  
+# Buttons
+  
+  Good tutorial for button debouncing, and explanation: https://esp32io.com/tutorials/esp32-button-debounce
+  Defautl button on the board "BOOT" seems to be debounced. So to test it a wire between a pin and GND needs to be used
 
 # Data to Thingspeak
 
