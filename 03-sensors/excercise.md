@@ -66,6 +66,14 @@ https://requestbin.com/ - simple online Web Server, to check outgoing requests
 
 The sensor can have addresses 0x76 & 0x77, our breakout uses 0x76, the default for the library is 0x77.
 We need to call *Wire.begin(SDA, SCL)*, e.g. like Wire.begin(16, 17). Without it, the expected ports for I2C communication are different for each breakout board
+
+Make sure that you do not have 2 lines, only the one with the address is needed. The other breaks it
+```
+  status = bme.begin()
+  ...
+  status = bme.begin(0x76)
+```
+  
 ```
     Serial.begin(9600); 
     
