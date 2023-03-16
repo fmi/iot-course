@@ -1,11 +1,6 @@
 # Random
 Location of default GPIO mappings for ESP8266 boards: 	c:\Users\I024148\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.7.4\variants\nodemcu\
 
-# Serial Input Test
-It is a bit tricky to handle Serial Input correctly and there wasn't a good example for this shipped with the ESP libraries, so here is one that can be embeded in other projects
-
-1. Copy contents of this sketch https://github.com/fmi/iot-course/blob/master/04-displays-and-actuators/SerialTest.ino to a new sketch
-
 # NeoPixel Test
 Documentation is here https://github.com/Makuna/NeoPixelBus/wiki, but is quite a LOT.
 
@@ -41,3 +36,8 @@ void setup()
   
 ```
 
+
+# Serial Input Test
+It is a bit tricky to handle Serial Input correctly and there wasn't a good example for this shipped with the ESP libraries, so here is one that can be embeded in other projects
+
+1. Copy contents of this sketch https://github.com/fmi/iot-course/blob/master/04-displays-and-actuators/SerialTest.ino to a new sketch
