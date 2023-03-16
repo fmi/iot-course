@@ -10,7 +10,7 @@ Note: the drawback here is that GPIO2 on ESP8266 is pulled up/down during sketch
 For ESP32 there are no such issues detected
 
 **Connection** : 5V/VIN, GND, DIN -> [ANY] (ESP32) or D4 (ESP8266 GPIO2)
-1. Install "NeopPixelBus by Makuna" library
+1. Install "NeoPixelBus by Makuna" library
 2. Example: https://github.com/fmi/iot-course/blob/master/04-displays-and-actuators/NeoPixeslFmi22.ino
 3. Some good example from the library is examples/NeopPixelBus by Makuna/animations/NeoPixelFunLoop (just set Pixelcount to the number of pixels - e.g. 8 or 16 depending on the LED Board. And adapt the "PixelPin" variable)
 
