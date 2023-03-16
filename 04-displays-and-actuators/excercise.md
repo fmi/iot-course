@@ -22,10 +22,11 @@ For ESP32 there are no such issues detected
 
 # LiquidCrystal 
 1. Install "LiquidCrystal I2C" Library by Frank Brabander. There are a lot so find and select this one. It comes first
-2. Load example from `examples/INCOMPATIBLE/Liquid Crystal I2C/HelloWorld` or without "INCOMPATIBLE" (it says incompatible as the library does not state ESP32, but it uses just standard functionality so it is fine)
-3. In the beginning of the sketch, provide the SDA,SCA pins that you are using via   Wire.begin(16,17); (in case SDA=16, SCL=17). And connect to 5V and GND
-4. Most likely you will need to turn the knob on the back clockwise to increase contrast until you see something
-5. if nothing is shown, you may need to change the port for the display from 0x27 to 0x3F -> `LiquidCrystal_I2C lcd(0x3F,16,2);`
+2. Note: Arduino 2.x is not able to open the examples from this library automatically. As they are .pde and not .ino. Therefore open them From: File -> Open -> Go to Documents/Arduino/libraries/LiquidCrystal I2C/examples.
+4. Or in case of older Arduino version: Load example from `examples/INCOMPATIBLE/Liquid Crystal I2C/HelloWorld` or without "INCOMPATIBLE" (it says incompatible as the library does not state ESP32, but it uses just standard functionality so it is fine)
+5. In the beginning of the sketch, provide the SDA,SCA pins that you are using via   Wire.begin(16,17); (in case SDA=16, SCL=17). And connect to 5V and GND
+6. Most likely you will need to turn the knob on the back clockwise to increase contrast until you see something
+7. if nothing is shown, you may need to change the port for the display from 0x27 to 0x3F -> `LiquidCrystal_I2C lcd(0x3F,16,2);`
 
 ```
 #include <LiquidCrystal_I2C.h>
