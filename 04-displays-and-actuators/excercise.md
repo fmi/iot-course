@@ -14,16 +14,29 @@ For ESP32 amd Arduino328 it can be connected to almost any pin, for ESP8266, it 
 Note: the drawback here is that GPIO2 on ESP8266 is pulled up/down during sketch upload, so NeoPixels may show some colors (usually Green) after sketch is uploaded
 For ESP32 there are no such issues detected
 
-**Connection** : 5V/VIN, GND, DIN -> G2 (ESP32) or D4 (ESP8266 GPIO2)
+**Connection** : 5V/VIN, GND, DIN -> [ANY] (ESP32) or D4 (ESP8266 GPIO2)
 1. Install "NeopPixelBus by Makuna" library
 2. Example: https://github.com/fmi/iot-course/blob/master/04-displays-and-actuators/NeoPixeslFmi22.ino
-3. Some good example from the library is examples/NeopPixelBus by Makuna/animations/NeoPixelFunLoop (just set Pixelcount to the number of pixels - e.g. 8)
+3. Some good example from the library is examples/NeopPixelBus by Makuna/animations/NeoPixelFunLoop (just set Pixelcount to the number of pixels - e.g. 8 or 16 depending on the LED Board. And adapt the "PixelPin" variable)
 
 
 # LiquidCrystal 
-1. Install "LiquidCrystal I2C" Library by Marco Schwarz. There are a lot so find and select this one
-2. Load example from examples/INCOMPATIBLE/Liquid Crystal I2C/HelloWorld (it says incompatible as the library does not state ESP32, but it uses just standard functionality so it is fine)
+1. Install "LiquidCrystal I2C" Library by Frank Brabander. There are a lot so find and select this one. It comes first
+2. Load example from `examples/INCOMPATIBLE/Liquid Crystal I2C/HelloWorld` or without "INCOMPATIBLE" (it says incompatible as the library does not state ESP32, but it uses just standard functionality so it is fine)
 3. In the beginning of the sketch, provide the SDA,SCA pins that you are using via   Wire.begin(16,17); (in case SDA=16, SCL=17). And connect to 5V and GND
 4. Most likely you will need to turn the knob on the back clockwise to increase contrast until you see something
 5. if nothing is shown, you may need to change the port for the display from 0x27 to 0x3F -> `LiquidCrystal_I2C lcd(0x3F,16,2);`
+
+```
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27,16,2);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+
+void setup()
+{
+
+  Wire.begin(22,23);
+  lcd.init();                      // initialize the lcd 
+  
+```
 
