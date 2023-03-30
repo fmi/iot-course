@@ -1,6 +1,7 @@
 ## Connecting to WiFi
 Wifi/Wifi/WifiScan, Wifi/WifiClient, Wifi/WifiMulti
 
+WifiManager by tzapu - Additional Library, that allows automatic management of Wifi Accesspoints configuration
 Wifi/WifiSmartConfig - allows automatic configuration of the Wifi network and requires the ESP Touch aplication for either Android or Iphone
 
 ## Sending HTTP
