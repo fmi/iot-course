@@ -17,10 +17,10 @@
 | 4. | 16.03.2023    | Displays and actuators                | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
 | 5. | 23.03.2023    | Practice & Exercises                  | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
 | 6. | 30.03.2023    | Power management and batteries        | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
-| 7. | 06.04.2023    | Connectivity 1 (remote lecture)       | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
-| 8. | 13.04.2023    | Connectivity 2 (remote lecture)       | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
-| 9. | 20.04.2023    | Security (remote lecture)             | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
-| 10. | 27.04.2023    | Device management (remote lecture)    | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
+| 7. | 06.04.2023    | Connectivity 1                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
+| 8. | 13.04.2023    | Connectivity 2 (remote)               | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
+| 9. | 20.04.2023    | Security (remote)                     | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
+| 10. | 27.04.2023    | Device management (remote)           | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
 | 11. | 04.05.2023    | Data management and analytics (remote)| Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
 | 12. | 11.05.2023    | Data management - Exercise (remote)   | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
 | 13. | 18.05.2023    | Course assignments                    | All               |       |
