@@ -13,10 +13,10 @@ Review the code of the [official SPI example](https://github.com/espressif/ardui
 > - [More details about the SPI protocol](https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html#)
 
 ## OneWire
-Connect the DS18b20 temp sensor to the board and measure its temperature
+Connect the DS18b20 temp sensor to the board and [measure its temperature](src/DS18x20_multiple/DS18x20_multiple.ino)
 
 ## Bluetooth Low Energy 
-Use ESP32 to emulate a heart rate monitor. 
+Use ESP32 to [emulate a heart rate monitor](src/02_BLE_heartrate/02_BLE_heartrate.ino). 
 
 * Use the [SelfLoops HRV application (Android)](https://play.google.com/store/apps/details?id=com.wellness.selfloops.hrv&hl=en_US&gl=US) to test if it works.
 
