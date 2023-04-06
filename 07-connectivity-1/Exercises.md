@@ -1,20 +1,16 @@
 # Exercises
 
 ## UART
-Review the code of the [RS485 anemometer example](https://www.hackster.io/philippedc/arduino-esp8266-rs485-modbus-anemometer-45f1d8
-).
+Review the code of the [RS485 Modbus smart meter example](https://embeddedthere.com/how-to-interface-esp32-with-rs485-modbus-sensors-with-example-code/).
 
-> ESP32 has [three hardware UART devices](https://github.com/G6EJD/ESP32-Using-Hardware-Serial-Ports
-) of which at least one is available, so you don't need [software serial as in ESP8266](https://github.com/plerup/espsoftwareserial).
-
-- https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/uart.html
+> ESP32 has [three hardware UART devices](https://circuits4you.com/2018/12/31/esp32-hardware-serial2-example/) of which at least one is available, so you don't need [software serial as in ESP8266](https://github.com/plerup/espsoftwareserial). 
+> - https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/uart.html
 
 ## SPI
 Review the code of the [official SPI example](https://github.com/espressif/arduino-esp32/blob/master/libraries/SPI/examples/SPI_Multiple_Buses/SPI_Multiple_Buses.ino).
 
 > ESP32 has [four hardware SPI devices](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/spi_master.html), of which only two can be used by your program (HSPI and VSPI).
-
-- [More details about the SPI protocol](https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html#)
+> - [More details about the SPI protocol](https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html#)
 
 ## OneWire
 Connect the DS18b20 temp sensor to the board and measure its temperature
