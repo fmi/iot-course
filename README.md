@@ -19,11 +19,11 @@
 | 6. | 30.03.2023    | Power management and batteries        | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
 | 7. | 06.04.2023    | Connectivity 1                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
 | 8. | 13.04.2023    | Vacation                              | Павел             |  |
-| 8. | 20.04.2023    | Connectivity 2 (remote)               | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
-| 9. | 27.04.2023    | Security (remote)                     | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
-| 10. | 04.05.2023    | Device management (remote)           | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
-| 11. | 11.05.2023    | Data management and analytics (remote)| Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
-| 12. | 18.05.2023    | Data management - Exercise (remote)   | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
+| 8. | 20.04.2023    | Connectivity 2                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
+| 9. | 27.04.2023    | Security                              | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
+| 10. | 04.05.2023    | Device management                    | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
+| 11. | 11.05.2023    | Data management and analytics        | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
+| 12. | 18.05.2023    | Data management - Exercise           | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
 | 13. | 25.05.2023    | Course assignments                    | All               |       |
 | 14. | 01.06.2023    | Course assignments                    | All               |       |
 | 15. | 08.06.2023    | Whats new in IoT                      | ?                 |       |
