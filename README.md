@@ -24,11 +24,11 @@
 | 10. | 04.05.2023    | Device management                    | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
 | 11. | 11.05.2023    | Data management and analytics        | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
 | 12. | 18.05.2023    | Data management - Exercise           | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
-| 13. | 25.05.2023    | Course assignments                    | All               |       |
-| 14. | 01.06.2023    | Course assignments                    | All               |       |
-| 15. | 08.06.2023    | Whats new in IoT                      | ?                 |       |
-| 16. | 15.06.2023    | Present course assignments            | All               |       |
-| 17. | 22.06.2023    | Present course assignments            | All               |       |
+| 13. | 25.05.2023    | Course assignments                   | Павел             |       |
+| 14. | 01.06.2023    | Course assignments                   | All               |       |
+| 15. | 08.06.2023    | Course assignments/Present assignment| All               |       |
+| 16. | 15.06.2023    | Present course assignments           | All               |       |
+| 17. | 22.06.2023    | Leftover course assignments (remote) | Павел             |       |
 
 Slot is always the same: 17:15 - 21:00
 
