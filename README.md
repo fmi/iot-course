@@ -28,7 +28,7 @@
 | 14. | 01.06.2023    | Course assignments                   | All               |       |
 | 15. | 08.06.2023    | Course assignments/Present assignment| All               |       |
 | 16. | 15.06.2023    | Present course assignments           | All               |       |
-| 17. | 22.06.2023    | Leftover course assignments (remote) | Павел             |       |
+| 17. | 22.06.2023    | Leftover course assignments          | Павел             |       |
 
 Slot is always the same: 17:15 - 21:00
 
