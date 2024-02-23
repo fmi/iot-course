@@ -9,28 +9,31 @@
 # Учебен план
 
 
-| # | Дата          | Тема                                  | Лектор            | Видео |
-| - | ------------- |:------------------------------------- | -----------------:|:-----:|
-| 1. | 23.02.2023    | Intro to IoT                          | Павел             |       |
-| 2. | 02.03.2023    | Hardware platforms / ESP              | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/JuP9YB0plFs) |
-| 3. | 09.03.2023    | Sensors                               | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
-| 4. | 16.03.2023    | Displays and actuators                | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
-| 5. | 23.03.2023    | Practice & Exercises                  | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
-| 6. | 30.03.2023    | Power management and batteries        | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
-| 7. | 06.04.2023    | Connectivity 1                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
-| 8. | 13.04.2023    | Vacation                              | Павел             |  |
-| 8. | 20.04.2023    | Connectivity 2                        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
-| 9. | 27.04.2023    | Security                              | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
-| 10. | 04.05.2023    | Device management                    | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
-| 11. | 11.05.2023    | Data management and analytics        | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
-| 12. | 18.05.2023    | Data management - Exercise           | Павел, Константин | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
-| 13. | 25.05.2023    | Course assignments                   | Павел             |       |
-| 14. | 01.06.2023    | Course assignments                   | All               |       |
-| 15. | 08.06.2023    | Course assignments/Present assignment| All               |       |
-| 16. | 15.06.2023    | Present course assignments           | All               |       |
-| 17. | 22.06.2023    | Leftover course assignments          | Павел             |       |
+| Дата         | Тема                                 | Лектор            | Видео |
+| -------------|:-------------------------------------| -----------------:|:-----:|
+| 22.02.2024   | Intro to IoT                         | Павел             |       |
+| 29.02.2024   | Hardware platforms / ESP             | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/JuP9YB0plFs) |
+| 07.03.2024   | Sensors                              | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
+| 14.03.2024   | Displays and actuators               | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
+| 21.03.2024   | Practice & Exercises                 | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
+| 28.03.2024   | Power management and batteries       | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
+| 04.04.2024   | Connectivity 1 (Remote?)             | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
+| 11.04.2024   | Connectivity 2                       | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
+| 18.04.2024   | Security                             | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
+| 25.04.2024   | Device management                    | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
+| 02.05.2024   | Vacation                             | N/A               |       |
+| 09.05.2024   | Data management and analytics        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
+| 16.05.2024   | Data management - Exercise           | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
+| 23.05.2024   | Work on course assignments           | All               |       |
+| 30.05.2024   | Work on/Present course assignments   | All               |       |
+| 06.06.2024   | Work on/Present course assignment    | All               |       |
+| 13.06.2024   | Present course assignments           | All               |       |
+
+[*Академичен календар](https://www.uni-sofia.bg/index.php/bul/studenti/akademichen_kalendar)
+
 
 Slot is always the same: 17:15 - 21:00
+
 
 * Course assignments = присъствено време, в което трябва да представите напредъка си и може да получите помощ от преподавателите
 * Present course assignments = възможни дати за финално представяне на курсовите проекти. Предвидени са няколко дати поради големината на групата и скоростта с която различните участници завършват проектите.
