@@ -44,6 +44,5 @@ For some reason i had to go to Device Manager -> Ports and then in the COM Port 
 
 
 # Optional Drivers
-1. (optional) Install drivers (Windows & Mac) for the CH340G Usb2Serial chip: http://vair-monitor.com/drivers/
-   * This shall only be needed for the NodeMCU (yellow) and Wemos D1 mini (blue) boards. 
-   * Long (battery powered) Wemos and the NodeMCU 1.0 (black ones) usually run without driver installation
+1. (optional) Install drivers (Mac) for the CP2102 Usb2Serial chip: [http://vair-monitor.com/drivers/](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+   
