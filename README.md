@@ -13,7 +13,7 @@
 | -------------|:-------------------------------------| -----------------:|:-----:|
 | 22.02.2024   | Intro to IoT                         | Павел             |       |
 | 29.02.2024   | Hardware platforms / ESP             | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/JuP9YB0plFs) |
-| 07.03.2024   | Sensors                              | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
+| 07.03.2024   | Sensors                              | Владимир,Павел    | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
 | 14.03.2024   | Displays and actuators               | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
 | 21.03.2024   | Practice & Exercises                 | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
 | 28.03.2024   | Power management and batteries       | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
