@@ -44,12 +44,22 @@ https://requestbin.com/ - simple online Web Server, to check outgoing requests
   3. Run and enjoy
   
 
-# BME 280 / SI7021
+# BME 280 / SI7021 / BMP280
+
+* BME280 vs BMP280
+<img width="300" alt="image" src="https://github.com/fmi/iot-course/assets/492455/29b96997-4214-4acf-b2bf-d78791b99c92">
+
+* SI7021
+<img width="150" alt="image" src="https://github.com/fmi/iot-course/assets/492455/f7aba63a-968d-4c4c-99fe-836b36e082e0">
+
 
 (За Si7021 -  аналогично, пак трябва да се добави Wire.begin, но няма нужда да се специфицира адрес на сензора)
 ## Install Driver
 
 * BME280 Driver - <Arduino IDE> -> Sketch -> Include Library -> Manage Libraries -> Search for "bme280", install "Adafruit BME280 Library"
+* BMP280 Driver - <Arduino IDE> -> Sketch -> Include Library -> Manage Libraries -> Search for "bmp280", install "Adafruit BMP280 Library"
+* SI7021 Driver - <Arduino IDE> -> Sketch -> Include Library -> Manage Libraries -> Search for "si7021", install "Adafruit SI7021 Library"
+
 
 ## Connection
 
