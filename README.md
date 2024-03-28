@@ -22,7 +22,7 @@
 | 07.03.2024   | Sensors                              | Владимир,Павел    | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
 | 14.03.2024   | Displays and actuators               | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
 | 21.03.2024   | Practice & Exercises                 | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
-| 28.03.2024   | Power management and batteries       | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
+| 28.03.2024   | Power management, batteries, networking       | Владимир          | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
 | 04.04.2024   | Connectivity 1 (Remote?)             | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
 | 11.04.2024   | Connectivity 2                       | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
 | 18.04.2024   | Security                             | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
