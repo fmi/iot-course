@@ -8,7 +8,7 @@
 |----|---|---|
 |Павел Геневски | | https://www.linkedin.com/in/pavel-genevski-bb075612/ |
 |Владимир Савченко | https://www.facebook.com/vlast3k | https://www.linkedin.com/in/vladisavchenko/ |
-|Николай Китанов | | https://www.linkedin.com/in/nikolay-kitanov/ |
+|Николай Китанов | https://www.facebook.com/nikolay.kitanov.5/ | https://www.linkedin.com/in/nikolay-kitanov/ |
 # Хардуерни компоненти
 За курсовия проект е осигурен [набор от различни хардуерни компоненти](https://bit.ly/2HvPD2o).
 
