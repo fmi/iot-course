@@ -1,5 +1,29 @@
 # Exercises
 
+## ESP-NOW
+Make a transmitter and receiver with two ESP devices (or only sender, we will provide few receivers for shared usage).
+
+### Prepare transmitter ESP 
+> [!NOTE]
+> You can skip this step if using already prepared receiver.
+
+First you need to obtain WIFI MAC address of the receiver device. [Run this sketch](src/ESP-Now/mac-scanner.ino) on the receiver ESP and obtain MAC address from the serial console.
+
+[Upload this sketch](src/ESP-Now/espnow-transmitter.ino) on the transmitter ESP and do not forget to change the MAC address in the code. Now when you power on the transmitter it will start to transmit messages each 1 sec and will print results in the serial console.
+
+### Prepare the receiver ESP
+[Upload this sketch](src/ESP-Now/espnow-receiver.ino) on the receiver ESP device and run it. On the serial console it will print what it receives. Also a single ESP device can receive ESP-Now data from multiple receivers, as long as they are configured with it's MAC Address. 
+
+(Optional) You can extend the exercise by modifying sending data by receiving input from a button or connecting display on the receiver to show the data. Or modify the sketch to turn on the builtin LED on the receiver (https://circuits4you.com/2018/02/02/esp32-led-blink-example/) by pressing the BOOT button on the transmitter (BOOT button is connected to GPIO0).
+
+- more about ESP-NOW: https://docs.arduino.cc/tutorials/nano-esp32/esp-now/
+- Exercise is based on this tutorial: https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/ 
+
+## Bluetooth Low Energy 
+Use ESP32 to [emulate a heart rate monitor](src/02_BLE_heartrate/02_BLE_heartrate.ino). 
+
+* Use the [SelfLoops HRV application (Android)](https://play.google.com/store/apps/details?id=com.wellness.selfloops.hrv&hl=en_US&gl=US) to test if it works.
+
 ## UART
 Review the code of the [RS485 Modbus smart meter example](https://embeddedthere.com/how-to-interface-esp32-with-rs485-modbus-sensors-with-example-code/).
 
@@ -15,20 +39,6 @@ Review the code of the [official SPI example](https://github.com/espressif/ardui
 ## OneWire
 Connect the DS18b20 temp sensor to the board and [measure its temperature](src/DS18x20_multiple/DS18x20_multiple.ino)
 
-## Bluetooth Low Energy 
-Use ESP32 to [emulate a heart rate monitor](src/02_BLE_heartrate/02_BLE_heartrate.ino). 
-
-* Use the [SelfLoops HRV application (Android)](https://play.google.com/store/apps/details?id=com.wellness.selfloops.hrv&hl=en_US&gl=US) to test if it works.
-
 ## (Optional) LoRa
 Review the implementation of the LoRa client device.
-
-## (Optional) ISM band (433MHz) connectivity (HC-12)
-Implement a remote controlled LED using the HC-12 module
-
-The HC-12 is a wireless serial port communication module that is very useful, extremely powerful and easy to use. It allows communication up to 1.8km distance in open air. You have to implement an receiver and a transmitter.
-
-HC-12 is configurable, take a look at [AT Commands:](https://howtomechatronics.com/tutorials/arduino/arduino-and-hc-12-long-range-wireless-communication-module)
-
-
 
