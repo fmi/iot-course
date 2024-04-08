@@ -5,11 +5,11 @@ Make a transmitter and receiver with two ESP devices (or only sender, we will pr
 
 ### Prepare transmitter ESP 
 > [!NOTE]
-> You can skip this step if using already prepared receiver.
+> You can skip MAC address step 1 if using already prepared receiver.
 
-First you need to obtain WIFI MAC address of the receiver device. [Run this sketch](src/ESP-Now/mac-scanner.ino) on the receiver ESP and obtain MAC address from the serial console.
+1. First you need to obtain WIFI MAC address of the receiver device. [Run this sketch](src/ESP-Now/mac-scanner.ino) on the receiver ESP and obtain MAC address from the serial console.
 
-[Upload this sketch](src/ESP-Now/espnow-transmitter.ino) on the transmitter ESP and do not forget to change the MAC address in the code. Now when you power on the transmitter it will start to transmit messages each 1 sec and will print results in the serial console.
+2. [Upload this sketch](src/ESP-Now/espnow-transmitter.ino) on the transmitter ESP and do not forget to change the MAC address in the code. Now when you power on the transmitter it will start to transmit messages each 1 sec and will print results in the serial console.
 
 ### Prepare the receiver ESP
 [Upload this sketch](src/ESP-Now/espnow-receiver.ino) on the receiver ESP device and run it. On the serial console it will print what it receives. Also a single ESP device can receive ESP-Now data from multiple receivers, as long as they are configured with it's MAC Address. 
