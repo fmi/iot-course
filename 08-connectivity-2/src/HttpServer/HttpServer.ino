@@ -1,6 +1,7 @@
-#include <ESP8266WiFi.h>
-#include <ESP8266WebServer.h> // TODO consider https://github.com/me-no-dev/ESPAsyncWebServer
-#include "FS.h"
+#include <WiFi.h>
+#include <WebServer.h>
+#include <FS.h>
+#include <SPIFFS.h>
 
 #include <algorithm>
 #include <string>
@@ -8,7 +9,7 @@
 const char* ssid = "btc123";
 const char* password = "iwhichiknewthat";
 
-ESP8266WebServer server(80);
+WebServer server(80);
 
 float temperature = 0.0;
 int humidity = 50;
