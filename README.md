@@ -30,9 +30,9 @@
 | 02.05.2024   | Vacation                             | N/A               |       |
 | 09.05.2024   | Data management and analytics        | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
 | 16.05.2024   | Data management - Exercise           | Павел             | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
-| 23.05.2024   | Work on course assignments           | All               |       |
+| 23.05.2024   | Work on course assignments           | All (без Вл.)     |       |
 | 30.05.2024   | Work on/Present course assignments   | All               |       |
-| 06.06.2024   | Work on/Present course assignment    | All               |       |
+| 06.06.2024   | Work on/Present course assignment    | All (без Вл.)     |       |
 | 13.06.2024   | Present course assignments           | All               |       |
 
 [*Академичен календар](https://www.uni-sofia.bg/index.php/bul/studenti/akademichen_kalendar)
