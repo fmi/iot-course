@@ -33,8 +33,8 @@
 | 15.05.2025   | Data management and analytics        | Павел, Николай     | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
 | 22.05.2025   | Data management - Exercise           | Павел, Николай     | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
 | 29.05.2025   | Work on course assignments           | Павел, Николай     |       |
-| 05.06.2024   | Work on/Present course assignments   | Павел, Николай     |       |
-| 12.06.2024   | Present course assignments           | Павел, Николай     |       |
+| 05.06.2025   | Work on/Present course assignments   | Павел, Николай     |       |
+| 12.06.2025   | Present course assignments           | Павел, Николай     |       |
 
 [*Академичен календар](https://www.uni-sofia.bg/index.php/bul/studenti/akademichen_kalendar)
 
