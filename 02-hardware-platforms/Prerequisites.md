@@ -1,5 +1,5 @@
 # Installation
-1. Install [Arduino IDE](https://www.arduino.cc/en/software) 2.3.2
+1. Install [Arduino IDE](https://www.arduino.cc/en/software) 2.3.4
 2. Install [ESP32 Development Kit](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
 3. Some boards require USB to serial drivers. To determine which chip you have, open device manager, plug the board and look what appears under `Ports (COM & LPT)`. On linux you may have to tail the syslog to determine the device. Then download the driver from the manufacturer's site. Known drivers are:
    - [Silabs CP2102](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
