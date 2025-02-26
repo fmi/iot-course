@@ -1,5 +1,4 @@
-#define LED_BUILTIN 2  // ESP32
-#define FLASH_BUTTON 0
+#define FLASH_BUTTON 14
 
 volatile int unprocessed_interrupts;
 
@@ -8,7 +7,6 @@ void setup() {
   pinMode(FLASH_BUTTON,INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(FLASH_BUTTON), handleInterrupt, FALLING);
   
-  pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(115200L);
 }
 
