@@ -6,23 +6,10 @@
 
 
 # Board selection
-Open the Arduino IDE, plug your board and select the board from the `Tools > Board` menu:
-* ESP32
-   * **ESP32 Dev Module** or ESP32 Devkit V1
-   * TTGO (with display and USB-C Port)
-
-* ESP8266
-  * Node MCU 0.9 (yellow) - The LED_BUILTIN constant shall be replaced with 1 to get the built in LED to work.
-  * Node MCU 1.0 (black)
-  * Wemos D1 R2 & mini (blue) - Use upload speed = 115200 baud
-  * Node MCU 1.0 (long battery powered boards) - Use this one although the board is labeled Wemos. The "Wemos D1 R2 & mini" will also work, but you will have to replace LED_BUILTIN with 16
-
+Open the Arduino IDE, plug your board and select the board from the
+`Tools > Board > esp32 >` **OLIMEX-ESP32-S2-DevKit-Lipo-USB**
 
 # Troubleshooting
-
-* Serial Port under Linux: this post explains what and why needs to be done to enable the com port under linux: http://forum.vair-monitor.com/showthread.php?tid=1&pid=41#pid41
-* ESP8266 and MacOS BigSur 11.2.3 - pyserial or esptool directories not found next to this upload.py tool.
- ![](https://user-images.githubusercontent.com/492455/111058955-b582a480-849a-11eb-853b-f692e5d1e226.png)
 ## ESP32: Upload not working
 1. You tried unplugging and plugging the board back right :) ?
 2. On some boards, you have to hold the `BOOT` button for a while after triggering the upload from the IDE. After upload starts, you can release it.
@@ -41,6 +28,11 @@ Open the Arduino IDE, plug your board and select the board from the `Tools > Boa
 
 ## ESP32: no output in serial monitor in Windows 10
 For some reason i had to go to Device Manager -> Ports and then in the COM Port for the connected device. Then go to Properties -> Port Settings -> Advanced, and set the COM Port number to something else (e.g. COM 19). Then I had to unplug the device and plug it again and it was working and reverting the port back to the original it was working again
+
+## Serial Port under Linux
+This post explains what needs to be done to enable the com port under linux: http://forum.vair-monitor.com/showthread.php?tid=1&pid=41#pid41
+* ESP and MacOS BigSur 11.2.3 - pyserial or esptool directories not found next to this upload.py tool.
+ ![](https://user-images.githubusercontent.com/492455/111058955-b582a480-849a-11eb-853b-f692e5d1e226.png)
 
 
 # Optional Drivers
