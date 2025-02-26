@@ -7,7 +7,7 @@
 
 # Board selection
 Open the Arduino IDE, plug your board and select the board from the
-`Tools > Board > esp32 >` **OLIMEX-ESP32-S2-DevKit-Lipo-USB**
+`Tools > Board > esp32 >` **OLIMEX-ESP32-DevKit-Lipo**
 
 # Troubleshooting
 ## ESP32: Upload not working
