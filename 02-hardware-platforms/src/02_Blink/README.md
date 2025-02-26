@@ -25,7 +25,7 @@ For simplicity the ESP32 board can be connected directly on the breadboard and o
 
 1. Run this sketch in Arduino IDE, compile it and and upload it to the board, it will cycle the 3 colors with 1 sec interval:
 
-```
+```cpp
 // Define PINs where the R, G and B colors are connected
 const int blueLED = 26;
 const int greenLED = 25;
@@ -58,7 +58,7 @@ void loop() {
 ```
 
 2. Make the loop a bit more advanced by reading the button and run the color cycle only when the button is pressed:
-```
+```cpp
 void loop() {
   int buttonstate = digitalRead(button);
   if (buttonstate == LOW) {
