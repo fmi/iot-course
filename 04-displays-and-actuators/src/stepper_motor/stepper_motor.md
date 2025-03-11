@@ -35,7 +35,7 @@ To interface the stepper motor with the ESP32, we’ll use the ULN2003 motor dri
 
 ## Code to Run (Arduino Sketches)
 
-1. Run this sketch in Arduino IDE, compile it and and upload it to the board, it will cycle the 3 colors with 1 sec interval:
+1. Run this sketch in Arduino IDE, compile it and and upload it to the board. The stepper will start to rotate slowly to make 1024 steps per revolution with 5 revolutions per minite.
 
 ```cpp
 /*
