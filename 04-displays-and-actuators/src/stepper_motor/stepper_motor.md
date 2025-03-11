@@ -8,11 +8,11 @@ You already have some components to use:
 
  A stepper motor is a brushless DC electric motor that divides a full rotation into a number of steps. It moves one step at a time, and each step is the same size
 
-![alt text](images/stepper.jpg){ width=40% } ![alt text](images/stepper_1.jpg){ width=40% }
+![alt text](images/stepper.jpg) ![alt text](images/stepper_1.jpg)
 
 **ULN2003 Motor Driver**.
 To interface the stepper motor with the ESP32, we’ll use the ULN2003 motor driver, as shown in the figure below. 
-![alt text](images/ULN2003.png){ width=45% } ![alt text](images/ULN2003_pinout.png){ width=50% }
+![alt text](images/ULN2003.png)![alt text](images/ULN2003_pinout.png)
 
 **Lets connect all together**:
 
