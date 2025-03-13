@@ -1,4 +1,5 @@
 // https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/ledc.html
+// https://lastminuteengineers.com/esp32-pwm-tutorial/
 
 #define BUZZER 13 // GPIO pin connected to the buzzer
 #define FREQUENCY 3000
