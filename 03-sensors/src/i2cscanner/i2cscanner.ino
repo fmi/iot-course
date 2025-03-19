@@ -32,7 +32,7 @@
  
 void setup()
 {
-  Wire.begin(18, 23);
+  Wire.begin(21, 22); // SDA, SCL
  
   Serial.begin(115200);
   while (!Serial);             // Leonardo: wait for serial monitor
