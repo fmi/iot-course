@@ -9,6 +9,7 @@ Become familiar with [GY-521 / MPU6050 accelerometer gyro](https://randomnerdtut
 ## MQ2
 Read [this article](https://diyi0t.com/mq2-gas-sensor-arduino-esp8266-esp32/) to become familiar with the principle of operation of the MQ sensor family. Run the `MQ2` exercise and try to convert the analog reading to ppm, according to the documentation.
 
-
+## SGP40
+This is a more advanced sensor. Read this [excellent Adafruit article](https://learn.adafruit.com/adafruit-sgp40/arduino) for more details.
 
 # Dust sensor
