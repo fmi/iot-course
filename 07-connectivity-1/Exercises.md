@@ -39,6 +39,12 @@ Review the code of the [official SPI example](https://github.com/espressif/ardui
 ## OneWire
 Connect the DS18b20 temp sensor to the board and [measure its temperature](src/DS18x20_multiple/DS18x20_multiple.ino)
 
+You can connect the sensor in two ways:
+- Three wire interface: https://randomnerdtutorials.com/guide-for-ds18b20-temperature-sensor-with-arduino/
+- Parasitic power: https://forum.arduino.cc/t/ds18b20-problem-with-parasite-power-mode/415950
+
+![schematic](https://europe1.discourse-cdn.com/arduino/original/4X/b/9/a/b9a8e50187caa34614fcf361a51fd5f0f04bf393.jpeg "Parasitic power")
+
 ## (Optional) LoRa
 Review the implementation of the LoRa client device.
 
