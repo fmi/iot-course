@@ -23,8 +23,8 @@
 | 06.03.2025   | Sensors                              | Павел,Николай  | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
 | 13.03.2025   | Displays and actuators               | Павел,Николай  | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
 | 20.03.2025   | Practice & Exercises                 | Павел,Николай  | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
-| 27.03.2025   | Power management, batteries          | Павел, Николай | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
-| 03.04.2025   | Connectivity 1 (Remote)              | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
+| 27.03.2025   | Connectivity 1                       | Павел, Николай | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
+| 03.04.2025   | Power management, batteries (Remote) | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
 | 10.04.2025   | Connectivity 2                       | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
 | 17.04.2025   | Vacation                             |    | |
 | 24.04.2025   | Security                             | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
