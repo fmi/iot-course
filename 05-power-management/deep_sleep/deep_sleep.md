@@ -15,8 +15,7 @@ We are using Olimex [ESP32-DevKit-LiPo Board](https://github.com/OLIMEX/ESP32-De
 
 ## Code to Run (Arduino Sketches)
 
-1. Run this sketch in Arduino IDE, compile it and and upload it to the board. The stepper will start to rotate slowly to make 1024 steps per revolution with 5 revolutions per minite.
-
+1. Run this sketch in Arduino IDE, compile it and and upload it to the board. It will print to the serial monitor "Wakeup signals..." and what coused them.
 ```cpp
 /*
 Deep Sleep with Touch Wake Up
