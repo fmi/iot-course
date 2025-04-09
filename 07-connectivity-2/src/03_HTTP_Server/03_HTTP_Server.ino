@@ -2,6 +2,7 @@
 #include <WiFi.h>
 #include <WiFiAP.h>
 #include <WebServer.h>
+#include <ESPmDNS.h>
 
 #define LED_PIN 17
 
@@ -27,6 +28,13 @@ void setup() {
   IPAddress access_point_ip = WiFi.softAPIP();
   Serial.print("AP is up. IP: ");
   Serial.println(access_point_ip);
+
+  if(!MDNS.begin("ledcontrol")) { // access as a host ledcontrol.local
+    Serial.println("Error setting up MDNS responder!");
+    while(true);
+  }
+  Serial.println("MDNS responder started");
+  MDNS.addService("http", "tcp", PORT);
 
   server.on("/", handle_root);
   server.on("/on", handle_on);
