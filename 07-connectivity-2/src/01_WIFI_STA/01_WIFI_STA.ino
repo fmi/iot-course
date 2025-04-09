@@ -23,6 +23,6 @@ void setup() {
 
 void loop(){
 
-  Serial.println(WiFi.RSSI());
+  Serial.println(WiFi.RSSI()); // -30 to -50 dBm is excellent, -50 to -67 dBm is OK, -67 to -70 dBm shaky
   delay(1000);
 }
