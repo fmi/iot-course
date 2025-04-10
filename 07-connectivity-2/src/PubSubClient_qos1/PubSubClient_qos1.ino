@@ -1,10 +1,10 @@
 #include <WiFi.h>
-#include <MQTT.h> // https://github.com/256dpi/arduino-mqtt
+#include <MQTT.h> // https://github.com/256dpi/arduino-mqtt (MQTT by Joel Gaehwiler)
 
-const char* mqtt_server = "tb.genevski.com";
-const char* clientId = "DoesntMatter";
-const char* user = "niceaccesstoken2022";
-const char* pass = NULL;
+const char* mqtt_server = "test.mosquitto.org";
+const char* clientId = "DoesntMatter9754239082470293742042122";
+// const char* user = "niceaccesstoken2022";
+// const char* pass = NULL;
 
 WiFiClient wifi;
 MQTTClient client;
@@ -32,11 +32,12 @@ bool reconnect() {
   } 
   
   Serial.print("Reconnecting to MQTT server...");  
-  if(client.connect(clientId, user, pass)) {
+  // if(client.connect(clientId, user, pass)) {
+  if(client.connect(clientId)) {
     Serial.println("connected");
     
-    //client.subscribe("topics/2");
-    //Serial.println("resubscribed");
+    client.subscribe("v1/devices/me/telemetry");
+    Serial.println("resubscribed");
     return true;
     
   } else {
@@ -72,7 +73,7 @@ void loop() {
       
     // TODO add sequence number
     String json = "{\"temperature\":" + String(temperature,1) + "}"; 
-    Serial.println(json);
+    // Serial.println(json);
 
     int qos = 1;
     bool retained = false;
