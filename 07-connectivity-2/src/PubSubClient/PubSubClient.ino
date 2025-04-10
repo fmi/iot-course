@@ -1,11 +1,11 @@
 #include <WiFi.h>
 #include <PubSubClient.h> //https://github.com/knolleary/pubsubclient/blob/master/src/PubSubClient.cpp
 
-const char* mqtt_server = "tb.genevski.com";
+const char* mqtt_server = "test.mosquitto.org";
 const int mqtt_port = 1883;
-const char* clientId = "DoesntMatter";
-const char* user = "tbaccesstoken";
-const char* pass = NULL; // no need to provide it
+const char* clientId = "DoesntMatter98327988982385729834028";
+// const char* user = "rw";
+// const char* pass = "readwrite";
 
 WiFiClient wifi;
 PubSubClient client(wifi);
@@ -37,10 +37,11 @@ int reconnect() {
   }
   
   Serial.print("Reconnecting to MQTT server...");  
-  if (client.connect(clientId, user, pass)) {
+  // if (client.connect(clientId, user, pass)) {
+  if(client.connect(clientId)) {
     Serial.println("connected");
     
-    client.subscribe("topics/2");
+    client.subscribe("v1/devices/me/telemetry");
     Serial.println("resubscribed");
     return 0;
     
@@ -67,12 +68,13 @@ void loop() {
   int err = reconnect();
   if(err != 0){
     // TODO buffer the measurement to send next time
+    Serial.println("Could not reconnect");
   } else {
     client.loop(); // process incoming messages and maintain connection to server
     
     // TODO add sequence number
     String json = "{\"temperature\":" + String(temperature,1) + "}"; 
-    Serial.println(json);
+    // Serial.println(json);
     client.publish("v1/devices/me/telemetry", json.c_str());
     
   }
