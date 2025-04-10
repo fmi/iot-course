@@ -34,7 +34,7 @@ void setup() {
     while(true);
   }
   Serial.println("MDNS responder started");
-  MDNS.addService("http", "tcp", PORT);
+  MDNS.addService("_http", "tcp", PORT); // https://docs.espressif.com/projects/esp-protocols/mdns/docs/latest/en/index.html
 
   server.on("/", handle_root);
   server.on("/on", handle_on);
