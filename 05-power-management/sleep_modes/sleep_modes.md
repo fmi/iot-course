@@ -153,17 +153,18 @@ void deepSleep() {
 }
 
 void hibernate() {
-    // In hibernation mode, the only way to save data is to host it in the EEPROM.
-    // The ledIndex value is saved at address 0x0000.
+    // Save the current LED index to EEPROM
     EEPROM.write(0, ledIndex);
     EEPROM.commit();
 
-    esp_sleep_pd_config(ESP_PD_DOMAIN_RTC_PERIPH,   ESP_PD_OPTION_OFF);
-    esp_sleep_pd_config(ESP_PD_DOMAIN_RTC_SLOW_MEM, ESP_PD_OPTION_OFF);
-    esp_sleep_pd_config(ESP_PD_DOMAIN_RTC_FAST_MEM, ESP_PD_OPTION_OFF);
-    esp_sleep_pd_config(ESP_PD_DOMAIN_XTAL,         ESP_PD_OPTION_OFF);
-    
-    deepSleep();
+    // Turn off all LEDs before entering hibernation
+    for (uint8_t i = 0; i < LED_NUMBER; i++) {
+        digitalWrite(LED_PINS[i], HIGH); // Set LEDs to HIGH (off for active-low LEDs)
+    }
+
+    // Enter deep sleep (hibernation)
+    esp_sleep_enable_timer_wakeup(SLEEP_DURATION);
+    esp_deep_sleep_start();
 }
 
 // ----------------------------------------------------------------------------
