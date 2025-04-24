@@ -29,7 +29,7 @@
 | 17.04.2025   | Vacation                             |    | |
 | 24.04.2025   | Security                             | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
 | 01.05.2025   | Vacation                             | Павел, Николай    | |
-| 08.05.2025   | Device management                    | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ)                |       |
+| 08.05.2025   | Device management                    |                   | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ)  |
 | 15.05.2025   | Data management and analytics        | Павел, Николай     | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
 | 22.05.2025   | Data management - Exercise           | Павел, Николай     | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
 | 29.05.2025   | Work on course assignments           | Павел, Николай     |       |
