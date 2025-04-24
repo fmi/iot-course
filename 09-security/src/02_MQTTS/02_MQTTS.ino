@@ -8,9 +8,10 @@ const char* password = ".......";
 
 // MQTT broker details
 const char* mqtt_server = "test.mosquitto.org";
-const int mqtt_port = 8883; // Secure MQTT port
-const char* mqtt_user = "testuser"; // Predefined username
-const char* mqtt_password = "testpassword"; // Predefined password
+const int mqtt_port = 8885; // Encrypted and authenticated MQTT port
+const char* clientId = "DoesntMatter98327988982385729834028";
+const char* user = "rw"; // Predefined username
+const char* pass = "readwrite"; // Predefined password
 
 // Root CA certificate for test.mosquitto.org
 const char* root_ca = \
@@ -64,52 +65,54 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.println();
 }
 
-bool reconnect() {
-  Serial.println("Attempting to reconnect to MQTT broker...");
-  Serial.print("Connecting to MQTT broker at ");
-  Serial.print(mqtt_server);
-  Serial.print(":");
-  Serial.println(mqtt_port);
-
-  if (client.connect("ESP32Client", mqtt_user, mqtt_password)) {
-    Serial.println("Connected to MQTT broker");
-    client.subscribe("test/topic"); // Subscribe to a test topic
-    return true;
+int reconnect() {
+  Serial.println("Reconnect requested");
+  if(client.connected()) {
+    Serial.println("MQTT client is still connected");
+    return 0;
+  }
+  
+  Serial.print("Reconnecting to MQTT server...");  
+  // if (client.connect(clientId, user, pass)) {
+  if(client.connect(clientId, user, pass)) {
+    Serial.println("connected");
+    
+    client.subscribe("v1/devices/me/telemetry");
+    Serial.println("resubscribed");
+    return 0;
+    
   } else {
-    Serial.print("Failed to connect. State: ");
-    Serial.println(client.state());
-    return false;
+    Serial.println("failed");
+    return client.state();
   }
 }
 
 void setup() {
   Serial.begin(115200);
+  randomSeed(analogRead(0));
+  
   setup_wifi();
-
+  
   client.setServer(mqtt_server, mqtt_port);
   client.setCallback(callback);
-  client.setKeepAlive(60);
 }
 
 void loop() {
-  if (WiFi.status() != WL_CONNECTED) {
-    Serial.println("WiFi not connected. Reconnecting...");
-    setup_wifi();
+  
+  float temperature = random(200, 301) / 10.0;
+
+  int err = reconnect();
+  if(err != 0){
+    // TODO buffer the measurement to send next time
+    Serial.println("Could not reconnect: " + String(err));
+  } else {
+    client.loop(); // process incoming messages and maintain connection to server
+    
+    // TODO add sequence number
+    String json = "{\"temperature\":" + String(temperature,1) + "}"; 
+    // Serial.println(json);
+    client.publish("v1/devices/me/telemetry", json.c_str());
+    
   }
-
-  if (!client.connected()) {
-    if (!reconnect()) {
-      delay(5000); // Wait before retrying
-      return;
-    }
-  }
-
-  client.loop(); // Process incoming messages
-
-  // Publish a test message
-  String message = "{\"temperature\": " + String(random(20, 30)) + "}";
-  Serial.println("Publishing message: " + message);
-  client.publish("test/topic", message.c_str());
-
-  delay(2000); // Wait before publishing the next message
+  delay(2000);
 }
