@@ -30,6 +30,7 @@
  * - This code uses `client.setInsecure()` for simplicity. Replace it with proper
  *   certificate validation (`client.setCACert()`) in production.
  * - Ensure the `scope` matches the permissions you need (e.g., "read:user").
+ * - For more info on the Flow: https://auth0.com/docs/get-started/authentication-and-authorization-flow/device-authorization-flow
  */
 
 #include <WiFi.h>
