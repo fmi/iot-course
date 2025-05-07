@@ -25,10 +25,10 @@ You already have some components to use:
 2. **Run this sketch in Arduino IDE**, This code demonstrates how to use the WiFiProvisioner library to configure WiFi credentials for an ESP32 device. The WiFiProvisioner library allows
 users to set up WiFi credentials dynamically, making it easier to connect
 the device to a network without hardcoding SSID and password.
-
-- 1.Open 192.168.4.1 and see the available WiFi SSIDs.
-- 2.Select the SSID
-- 3.Enter a WiFi password.
+- 1.Search for WiFi SSID starting with "ESP32 Wi-Fi Provisioniong" and connect to it. It is not providing any internet, but connectivity to the ESP32.
+- 2.Open 192.168.4.1 and see the available WiFi SSIDs.
+- 3.Select the SSID
+- 4.Enter a WiFi password.
 
 ![alt text](images/wifiprov_init.png)
 
