@@ -19,18 +19,18 @@
 | Дата         | Тема                                 | Лектори           | Видео |
 | -------------|:-------------------------------------| -----------------:|:-----:|
 | 19.02.2026   | Intro to IoT                         | Павел, Николай    |       |
-| 26.02.2026   | Hardware platforms / ESP             | Павел, Николай    |       |
-| 05.03.2026   | Sensors                              | Павел, Николай    |       |
-| 12.03.2026   | Displays and actuators               | Павел, Николай    |       |
-| 19.03.2026   | Practice & Exercises                 | Павел, Николай    |       |
-| 26.03.2026   | Connectivity 1                       | Павел, Николай    |       |
-| 02.04.2026   | Power management, batteries          | Павел, Николай    |       |
+| 26.02.2026   | Hardware platforms / ESP             | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/JuP9YB0plFs) |
+| 05.03.2026   | Sensors                              | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/7YJqtn6doas) |
+| 12.03.2026   | Displays and actuators               | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/6l79UTjuuwg) |
+| 19.03.2026   | Practice & Exercises                 | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/6ZNgmo3pdXg) |
+| 26.03.2026   | Connectivity 1                       | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/cq97WpIIubA) |
+| 02.04.2026   | Power management, batteries          | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/osHbqO7c6O8) |
 | 09.04.2026   | Vacation (Великден)                  |                   |       |
-| 16.04.2026   | Connectivity 2                       | Павел, Николай    |       |
-| 23.04.2026   | Security                             | Павел, Николай    |       |
-| 30.04.2026   | Device management                    | Павел, Николай    |       |
-| 07.05.2026   | Data management and analytics        | Павел, Николай    |       |
-| 14.05.2026   | Data management - Exercise           | Павел, Николай    |       |
+| 16.04.2026   | Connectivity 2                       | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/CGN9f2PfI8I) |
+| 23.04.2026   | Security                             | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/bqQLUAwN6sw) |
+| 30.04.2026   | Device management                    | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/WwzskAgpshQ) |
+| 07.05.2026   | Data management and analytics        | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/vVaOwJxaxiE) |
+| 14.05.2026   | Data management - Exercise           | Павел, Николай    | [![Video](images/iot-on-youtube.png)](https://youtu.be/dwEGtwb0S4E) |
 | 21.05.2026   | Work on course assignments           | Павел, Николай    |       |
 | 28.05.2026   | Work on/Present course assignments   | Павел, Николай    |       |
 | 04.06.2026   | Present course assignments           | Павел, Николай    |       |
