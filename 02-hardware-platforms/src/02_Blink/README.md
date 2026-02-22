@@ -19,6 +19,9 @@ You got RGB (Reg Green Blue) LED (light emitting diode), that have 3 separate co
 
 For simplicity the ESP32 board can be connected directly on the breadboard and only one cable is needed to connect the anode of the LED (+3.3V), like on this picture. Just manually twist the anode of the LED (the longest leg) and connect it with a male-female cable to bradboard. 
 
+> [!TIP]
+> You can use 220 ohm resistor in the kit to limit the current through the common andode. This will make the LED less bright and will protect it from burning and overloading the ESP32 pins. 
+
 ![alt text](images/breadboard_simple.png)
 
 ## Code to Run (Arduino Sketches)
