@@ -1,33 +1,49 @@
-/*************************************************** 
-  This is an example for the SHT4x Humidity & Temp Sensor
+/***************************************************
+  SHT40 - Temperature & Humidity Sensor
 
-  Designed specifically to work with the SHT4x sensor from Adafruit
-  ----> https://www.adafruit.com/products/4885
+  This example reads temperature and humidity from
+  a SHT4x sensor using I2C.
 
-  These sensors use I2C to communicate, 2 pins are required to  
-  interface
- ****************************************************/
+  Wiring (ESP32):
+    SHT40 SDA -> GPIO 21
+    SHT40 SCL -> GPIO 22
+    SHT40 VIN -> 3.3V
+    SHT40 GND -> GND
 
+  I2C address: 0x44 (default)
+
+  Required library: Adafruit SHT4x Library
+    Install via: Sketch -> Include Library -> Manage Libraries
+    Search for "Adafruit SHT4x"
+ ***************************************************/
+
+// Include the library for the SHT4x sensor
 #include "Adafruit_SHT4x.h"
 
+// Create a sensor object
 Adafruit_SHT4x sht4 = Adafruit_SHT4x();
 
 void setup() {
+  // Start serial communication so we can see the output
   Serial.begin(115200);
 
   while (!Serial)
     delay(10);     // will pause Zero, Leonardo, etc until serial console opens
 
   Serial.println("Adafruit SHT4x test");
+
+  // Try to initialize the sensor
   if (! sht4.begin()) {
-    Serial.println("Couldn't find SHT4x");
+    Serial.println("Couldn't find SHT4x. Check wiring!");
+    // Stop the program if the sensor is not found
     while (1) delay(1);
   }
   Serial.println("Found SHT4x sensor");
   Serial.print("Serial number 0x");
   Serial.println(sht4.readSerial(), HEX);
 
-  // You can have 3 different precisions, higher precision takes longer
+  // Set measurement precision: HIGH, MED, or LOW
+  // Higher precision takes longer but gives more accurate readings
   sht4.setPrecision(SHT4X_HIGH_PRECISION);
   switch (sht4.getPrecision()) {
      case SHT4X_HIGH_PRECISION: 
@@ -41,9 +57,9 @@ void setup() {
        break;
   }
 
-  // You can have 6 different heater settings
-  // higher heat and longer times uses more power
-  // and reads will take longer too!
+  // The SHT4x has a built-in heater to remove condensation
+  // Higher heat and longer times use more power
+  // NO_HEATER is recommended for normal operation
   sht4.setHeater(SHT4X_NO_HEATER);
   switch (sht4.getHeater()) {
      case SHT4X_NO_HEATER: 
@@ -73,17 +89,23 @@ void setup() {
 
 
 void loop() {
+  // sensors_event_t is a standard Adafruit type for sensor readings
   sensors_event_t humidity, temp;
-  
+
+  // Measure how long the reading takes
   uint32_t timestamp = millis();
-  sht4.getEvent(&humidity, &temp);// populate temp and humidity objects with fresh data
+  // Read temperature and humidity from the sensor
+  sht4.getEvent(&humidity, &temp);
   timestamp = millis() - timestamp;
 
+  // Print the temperature in degrees Celsius
   Serial.print("Temperature: "); Serial.print(temp.temperature); Serial.println(" degrees C");
+  // Print the relative humidity in percent
   Serial.print("Humidity: "); Serial.print(humidity.relative_humidity); Serial.println("% rH");
 
   Serial.print("Read duration (ms): ");
   Serial.println(timestamp);
 
+  // Wait 1 second before reading again
   delay(1000);
 }
