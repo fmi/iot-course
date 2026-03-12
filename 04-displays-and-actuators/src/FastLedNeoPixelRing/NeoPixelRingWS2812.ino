@@ -1,36 +1,55 @@
-/***
+/***************************************************
+  WS2812 NeoPixel Ring - Chasing LED Effect
 
-The provided code is an Arduino sketch that controls a ring of NeoPixel LEDs using the FastLED library. The sketch defines the number of LEDs (NUM_LEDS) as 16 and the data pin (DATA_PIN) as 18. An array leds of type CRGB is created to hold the color values for each LED, and an integer roundCounter is initialized to 0 to keep track of the number of completed cycles.
+  This example controls a 16-LED NeoPixel (WS2812)
+  ring to create a back-and-forth chasing light.
+  After every 5 cycles the entire ring flashes blue.
 
-In the setup function, the FastLED.addLeds method is called to initialize the LED array with the specified type (NEOPIXEL) and data pin. This sets up the FastLED library to control the LEDs.
+  WS2812 LEDs are "addressable" — each LED has a
+  tiny chip inside that receives colour data over a
+  single data wire. The FastLED library handles the
+  precise timing required by the WS2812 protocol.
 
-The loop function contains the main logic for controlling the LEDs. It first lights up the LEDs sequentially from the first LED to the last, setting each LED to CRGB::LightCoral and then turning it off after a 200-millisecond delay. This creates a chasing light effect. The same process is then repeated in reverse, lighting up the LEDs from the last to the first.
+  Wiring (ESP32):
+    WS2812 DIN -> GPIO 18
+    WS2812 5V  -> 5V
+    WS2812 GND -> GND
 
-After completing one forward and one backward cycle, the roundCounter is incremented. If the roundCounter reaches 5, indicating that 5 complete cycles have been performed, all LEDs are set to CRGB::Blue and displayed for 1 second. The roundCounter is then reset to 0, and the process starts over.
+  Required library: FastLED
+    Install via: Sketch -> Include Library -> Manage Libraries
+    Search for "FastLED" by Daniel Garcia
+ ***************************************************/
 
-This code effectively creates a visual effect where the LEDs chase back and forth, and after every 5 cycles, all LEDs turn blue for a brief period.
-
-***/
+// Include the FastLED library for controlling addressable LEDs
 #include <FastLED.h>
+
+// Number of LEDs on the ring
 #define NUM_LEDS 16
+
+// GPIO pin connected to the DIN (data in) of the ring
 #define DATA_PIN 18
+
+// Array that holds the colour value for each LED
 CRGB leds[NUM_LEDS];
+
+// Counts how many back-and-forth cycles have completed
 int roundCounter = 0;
 
 void setup() {
+  // Register the LED strip: chip type NEOPIXEL, data on DATA_PIN
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
 }
 
 void loop() {
-  // Light up LEDs from 0 to NUM_LEDS-1
+  // --- Forward chase: light each LED one at a time, 0 -> 15 ---
   for (int i = 0; i < NUM_LEDS; i++) {
-    leds[i] = CRGB::LightCoral;
-    FastLED.show();
-    delay(200);
-    leds[i] = CRGB::Black;
+    leds[i] = CRGB::LightCoral;   // Turn this LED on (coral colour)
+    FastLED.show();                // Push colours to the ring
+    delay(200);                    // Wait so the eye can see it
+    leds[i] = CRGB::Black;        // Turn it off before moving on
   }
 
-  // Light up LEDs from NUM_LEDS-1 to 0
+  // --- Reverse chase: light each LED one at a time, 15 -> 0 ---
   for (int i = NUM_LEDS - 1; i >= 0; i--) {
     leds[i] = CRGB::LightCoral;
     FastLED.show();
@@ -38,16 +57,16 @@ void loop() {
     leds[i] = CRGB::Black;
   }
 
-  // Increment the round counter
+  // One full back-and-forth cycle done
   roundCounter++;
 
-  // After 5 rounds, turn all LEDs blue
+  // Every 5 cycles, flash the whole ring blue for 1 second
   if (roundCounter >= 5) {
     for (int i = 0; i < NUM_LEDS; i++) {
       leds[i] = CRGB::Blue;
     }
     FastLED.show();
-    delay(1000); // Keep the LEDs blue for 1 second
-    roundCounter = 0; // Reset the round counter
+    delay(1000);
+    roundCounter = 0;
   }
 }
