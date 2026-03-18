@@ -1,19 +1,22 @@
 /**************************************************************************
+ SSD1306 128x32 OLED Display - I2C Example for ESP32
 
- Adapted to ESP32 with I2C on pinks 21, 22.
- Original code from Adafruit
+ Adapted to ESP32 with I2C on pins 21, 22.
+ Original code from Adafruit.
 
- This is an example for our Monochrome OLEDs based on SSD1306 drivers
+ Libraries required (install via Arduino Library Manager):
+   - Adafruit SSD1306
+   - Adafruit GFX Library
 
- Pick one up today in the adafruit shop!
- ------> http://www.adafruit.com/category/63_98
+ Wiring (I2C):
+   SSD1306 Pin  -> ESP32 Pin
+   --------------------------
+   SDA          -> GPIO 21
+   SCL          -> GPIO 22
+   VCC          -> 3.3V
+   GND          -> GND
 
- This example is for a 128x32 pixel display using I2C to communicate
- 3 pins are required to interface (two I2C and one reset).
-
- Adafruit invests time and resources providing this open
- source code, please support Adafruit and open-source
- hardware by purchasing products from Adafruit!
+ I2C address: 0x3C (typical for 128x32 displays)
 
  Written by Limor Fried/Ladyada for Adafruit Industries,
  with contributions from the open source community.
