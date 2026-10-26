@@ -5,16 +5,16 @@ description = ""
 authors = [
     { name = "pgenevski", email = "pavel.genevski@gmail.com" },
 ]
-requires-python = ">=3.9,<4.0"
+requires-python = ">=3.11,<4.0"
 dependencies = [
-    "dask[complete]>=2024.5.0,<2025.0.0",
-    "jupyter>=1.0.0,<2.0.0",
-    "matplotlib>=3.8.4,<4.0.0",
-    "numpy>=1.26.4,<2.0.0",
-    "pandas>=2.2.2,<3.0.0",
-    "pyarrow>=16.0.0,<17.0.0",
-    "scikit-learn>=1.6.1",
-    "seaborn>=0.13.2,<0.14.0",
+    "dask[complete]>=2026.8.0,<2027.0.0",
+    "jupyter>=1.1.1,<2.0.0",
+    "matplotlib>=3.11.0,<4.0.0",
+    "numpy>=2.4.0,<3.0.0",
+    "pandas>=3.1.0,<4.0.0",
+    "pyarrow>=26.0.0",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
 ]
 
 [tool.uv]
