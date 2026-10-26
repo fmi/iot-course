@@ -1,21 +1,21 @@
-[tool.poetry]
+[project]
 name = "notebooks"
 version = "0.1.0"
 description = ""
-authors = ["pgenevski <pavel.genevski@gmail.com>"]
-readme = "README.md"
+authors = [
+    { name = "pgenevski", email = "pavel.genevski@gmail.com" },
+]
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "dask[complete]>=2024.5.0,<2025.0.0",
+    "jupyter>=1.0.0,<2.0.0",
+    "matplotlib>=3.8.4,<4.0.0",
+    "numpy>=1.26.4,<2.0.0",
+    "pandas>=2.2.2,<3.0.0",
+    "pyarrow>=16.0.0,<17.0.0",
+    "scikit-learn>=1.6.1",
+    "seaborn>=0.13.2,<0.14.0",
+]
 
-[tool.poetry.dependencies]
-python = "^3.09"
-pandas = "^2.2.2"
-numpy = "^1.26.4"
-seaborn = "^0.13.2"
-matplotlib = "^3.8.4"
-dask = {extras = ["complete"], version = "^2024.5.0"}
-pyarrow = "^16.0.0"
-jupyter = "^1.0.0"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+package = false
